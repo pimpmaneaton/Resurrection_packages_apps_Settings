@@ -15,5 +15,5 @@
 -->
 
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/ic_action_reset_alpha"
+    android:src="@drawable/ic_action_palette_alpha"
     android:tint="@color/white" />
