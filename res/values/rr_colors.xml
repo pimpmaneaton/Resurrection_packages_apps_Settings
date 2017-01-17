@@ -147,4 +147,9 @@
     <color name="suggestion_condition_card_header_title_text_color">@*android:color/accent_device_default_light</color>
     <color name="suggestion_condition_card_header_summary_text_color">@*android:color/accent_device_default_light</color>
 
+    <!-- Extra info -->
+    <color name="extrainfo_separator">#ffffffff</color>
+    <color name="extrainfo_cat_background">@*android:color/accent_device_default_light</color>
+    <color name="extrainfo_cat_text">#ffffffff</color>
+    <color name="extrainfo_value_text">#ff263238</color>
 </resources>

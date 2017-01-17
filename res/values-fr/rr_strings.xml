@@ -1747,4 +1747,7 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">Bouton pour fermer toutes les apps</string>
   <string name="notification_guts_kill_app_button_summary">Afficher un bouton tuer l’application dans le menu lors d\'un appui long sur la notification</string>
+  <!-- Extra Info -->
+  <string name="lsextrainfo">Informations supplémentaires</string>
+  <string name="lsextrainfo_summary">Afficher des informations supplémentaires pour cpu, affichage, etc</string>	
 </resources>

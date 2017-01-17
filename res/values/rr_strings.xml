@@ -1943,4 +1943,8 @@
 
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+    
+    <!-- Extra Info -->
+    <string name="lsextrainfo">Extra information</string>
+    <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>	
 </resources>
