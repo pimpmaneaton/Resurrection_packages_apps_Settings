@@ -2174,4 +2174,8 @@
     <string name="data_activity_arrows_summary">Display data activity arrows</string>
     <string name="wifi_activity_arrows_title">Wifi activity</string>
     <string name="wifi_activity_arrows_summary">Display wifi activity arrows</string>
+
+    <string name="twilight_mode_location_dialog">Location disabled</string>
+    <string name="twilight_mode_location_disabled">Location access is disabled</string>
+    <string name="twilight_mode_location_enable">Enable</string>
 </resources>
