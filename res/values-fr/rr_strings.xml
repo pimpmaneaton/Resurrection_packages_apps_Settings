@@ -428,13 +428,10 @@
   <string name="battery_bar_style_center_mirrored">Centre-miroir</string>
   <string name="battery_bar_style_reversed">Inverser</string>
   <string name="battery_bar_use_charging_color_title">Couleur de charge personnalisée</string>
-<<<<<<< HEAD
   <string name="battery_bar_use_gradient_color">Utiliser la graduation de couleur</string>
   <string name="battery_bar_gradient_color_summary">Utiliser un dégradé de couleur comme une échelle indiquant le niveau de batterie</string>
   <string name="battery_bar_high_color">Couleur à haut niveau</string>
   <string name="battery_bar_low_color">Couleur à faible niveau</string>
-=======
->>>>>>> fd5cd44... Revert "Battery bar [2/2]"
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Personnaliser les différents éléments de la barre d’état, de l’horloge et de la date</string>
   <string name="status_bar_logo_summary">Activer ou désactiver le logo RR-OS dans la barre d\'état. Personnaliser la couleur et la position</string>
@@ -685,7 +682,7 @@
   <string name="torch_long_press_power_timeout_never">Jamais</string>
   <string name="torch_long_press_power_timeout_1min">1 minute</string>
   <string name="torch_long_press_power_timeout_2min">2 minutes</string>
-  <string name="torch_long_press_power_timeout_5min">5 minutes</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutes</string>
   <string name="torch_long_press_power_timeout_10min">10 minutes</string>
   <string name="volume_keys_control_ring_stream_title">Contrôler le volume de la sonnerie</string>
   <string name="volume_keys_control_ring_stream_summary_on">Les boutons de volume contrôlent le volume de la sonnerie</string>
@@ -1108,10 +1105,10 @@
   <string name="dot_color_switch_title">Couleur d\'affichage</string>
   <!-- Status bar - Battery saver color -->
   <string name="status_bar_battery_saver_color_title">Couleur de la barre d\'économiseur de batterie</string>
-  <string name="status_bar_battery_saver_color_summary">Remarque : Si l’économiseur de batterie est déjà activé, pour que la nouvelle couleur soit appliquée, redémarrer l’économiseur de batterie !</string>
+  <string name="status_bar_battery_saver_color_summary">Remarque : Si l’économiseur de batterie est déjà activé, pour que la nouvelle couleur soit appliquée, redémarrer l’économiseur de batterie !</string>
   <!-- Fingerprint unlock keystore -->
   <string name="fp_unlock_keystore_title">Déverrouillage par empreinte digitale</string>
-  <string name="fp_unlock_keystore_summary">Déverrouiller l’appareil avec l\'empreinte digitale après un redémarrage, sans mot de passe/PIN/Schema\nNote : à vos risques et périls !</string>
+  <string name="fp_unlock_keystore_summary">Déverrouiller l’appareil avec l\'empreinte digitale après un redémarrage, sans mot de passe/PIN/Schema\nNote : à vos risques et périls !</string>
   <!-- Ambient Music Ticker -->
   <string name="force_ambient_for_media_title">Musique ambiante</string>
   <string name="force_ambient_for_media_summary">Informations sur la piste musicale dans l\'affichage d\'ambiance</string>
@@ -1181,8 +1178,8 @@
   <string name="blur_dark_color">Filtre de couleur « Fond sombre »</string>
   <string name="blur_mixed_color">Filtre de couleur « Fond mixte»</string>
   <string name="blur_notice">À propos de l\'effet de flou</string>
-  <string name="blur_notice_summary">Les effets de flou sont désactivés sur l\'écran de verrouillage! Seules les notifications transparentes sont activées !</string>
-  <string name="blur_colors_notice">Que font ces couleurs ?</string>
+  <string name="blur_notice_summary">Les effets de flou sont désactivés sur l\'écran de verrouillage! Seules les notifications transparentes sont activées !</string>
+  <string name="blur_colors_notice">Que font ces couleurs ?</string>
   <string name="blur_colors_notice_summary">
 Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris normal, vous pouvez maintenant choisir les couleurs comme vous le souhaitez. \ NIl existe trois filtres de couleur: un utilisé pour les arrière-plans clairs, un pour les arrière-plans sombres et un pour les arrière-plans clairs / sombres. les couleurs fonctionnent? \ nSimple, comme le disent les titres, le filtre de lumière sera utilisé pour les fonds plus clairs, le filtre sombre pour les fonds sombres et le filtre mixte sera utilisé pour des fonds pas trop sombres mais ni trop légers. \ nCes couleurs sont utilisées pour les deux BlurBackgrounds: StatusBar one et RecentsApps un</string>
   <string name="blur_expstatus_cat">Barre d\'état déroulée </string>
@@ -1692,9 +1689,9 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="sum8">Vous ne voulez pas manquer ce truc !</string>
   <string name="sum9">Bienvenue sur la rom Resurrection Remix</string>
   <string name="sum10">Ne me passe pas !</string>
-  <string name="sum11">As-tu fini tes devoirs ? ツ</string>
+  <string name="sum11">As-tu fini tes devoirs ? ツ</string>
   <string name="sum12">Bonjour, je suis votre nouvel assistant</string>
-  <string name="sum13">Ne joue pas avec l’interface !</string>
+  <string name="sum13">Ne joue pas avec l’interface !</string>
   <string name="sum14">A quoi vous vous attendiez ?</string>
   <string name="sum15">Uniquement pour les utilisateurs pro</string>
   <string name="sum16">Vous vous ennuyez ? Découvrez-moi dès maintenant !</string>
@@ -1704,7 +1701,7 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="sum20">Les noobs ne peuvent pas entrer</string>
   <string name="sum21">#gotresurrected</string>
   <string name="sum22">Alerte Info: Apple supprimera la lampe torche des futurs iPhone.</string>
-  <string name="sum23">Es-tu heureux maintenant ?</string>
+  <string name="sum23">Es-tu heureux maintenant ?</string>
   <string name="sum24">C\'en est assez, Ne cliquez plus sur moi!</string>
   <string name="sum25">#Swagger</string>
   <string name="sum26">ツ</string>
