@@ -427,11 +427,6 @@
   <string name="battery_bar_style_center_mirrored">केंद्र में नजर आता</string>
   <string name="battery_bar_style_reversed">उल्टा</string>
   <string name="battery_bar_use_charging_color_title">कस्टम चार्जिंग रंग</string>
-  <string name="battery_bar_blend_color_title">रंग मिश्रण</string>
-  <string name="battery_bar_blend_color_summary">बैटरी प्रतिशत के अनुसार पूर्ण/खाली रंग मिलाएं</string>
-  <string name="battery_bar_blend_color_reverse_title">रंग दिशा उल्टा करे</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">पूर्ण → खाली: लाल ← ग्रीन ← नीले ← लाल</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">पूर्ण → खाली: लाल ← ग्रीन ← नीले ← लाल</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">स्थिति पट्टी घड़ी और तारीख के विभिन्न तत्वों</string>
   <string name="status_bar_logo_summary">सक्षम या प्रस्थिति में जी उठने लोगो को निष्क्रिय । रंग और स्थिति अनुकूलित करें</string>

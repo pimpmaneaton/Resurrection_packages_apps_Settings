@@ -64,13 +64,14 @@ public class BatterySettings extends SettingsPreferenceFragment implements
        mBatteryIconStyle.setSummary(mBatteryIconStyle.getEntries()[valueIndex]);
        int showPercent = Settings.System.getInt(getActivity().getContentResolver(),
                          Settings.System.SHOW_BATTERY_PERCENT, 1);
-        mBatteryPercentage = (ListPreference) findPreference(BATTERY_PERCENT);
-        mBatteryPercentage.setValue(Integer.toString(showPercent));
-                        valueIndex = mBatteryPercentage.findIndexOfValue(String.valueOf(showPercent));
-                        mBatteryPercentage.setSummary(mBatteryPercentage.getEntries()[valueIndex]);
-        mBatteryPercentage.setOnPreferenceChangeListener(this);
-        boolean hideForcePercentage = batteryStyle == 7; /*text or hidden style*/
-        mBatteryPercentage.setEnabled(!hideForcePercentage);
+
+       mBatteryPercentage = (ListPreference) findPreference(BATTERY_PERCENT);
+       mBatteryPercentage.setValue(Integer.toString(showPercent));
+                         valueIndex = mBatteryPercentage.findIndexOfValue(String.valueOf(showPercent));
+       mBatteryPercentage.setSummary(mBatteryPercentage.getEntries()[valueIndex]);
+       mBatteryPercentage.setOnPreferenceChangeListener(this);
+       boolean hideForcePercentage = batteryStyle == 6; /*text or hidden style*/
+       mBatteryPercentage.setEnabled(!hideForcePercentage);
 
     }
 

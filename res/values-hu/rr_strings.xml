@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Középre tükrözött</string>
   <string name="battery_bar_style_reversed">Fordított</string>
   <string name="battery_bar_use_charging_color_title">Egyéni töltési szín</string>
-  <string name="battery_bar_blend_color_title">Színek keverése</string>
-  <string name="battery_bar_blend_color_summary">Keverje az üres/teli színeket az akkumulátor töltöttségének megfelelően</string>
-  <string name="battery_bar_blend_color_reverse_title">Szín irányának megfordítása</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Teljes → üres: piros ← zöld ← kék ← piros</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Teljes → üres: piros → zöld → kék → piros</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Állapotsori óra és dátum különböző részleteinek testreszabása</string>
   <string name="status_bar_logo_summary">Engedélyezheti vagy letilthatja a Resurrection logót az állapotsoron. Testreszabhatja színét és helyzetét</string>

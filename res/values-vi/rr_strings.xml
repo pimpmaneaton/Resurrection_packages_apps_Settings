@@ -429,11 +429,6 @@ Mật độ điểm ảnh
   <string name="battery_bar_style_center_mirrored">Đối xứng giữa</string>
   <string name="battery_bar_style_reversed">Đảo ngược</string>
   <string name="battery_bar_use_charging_color_title">Tùy chỉnh màu khi sạc</string>
-  <string name="battery_bar_blend_color_title">Pha trộn màu sắc</string>
-  <string name="battery_bar_blend_color_summary">Pha trộn các màu đầy đủ/rỗng với tỷ lệ phần trăm pin</string>
-  <string name="battery_bar_blend_color_reverse_title">Đảo ngược hướng màu sắc</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Đầy đủ → trống: đỏ ← lục ← lam ← đỏ</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Đầy đủ → rỗng: đỏ → lục → lam → đỏ</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Tùy chỉnh các thành phần của đồng hồ và ngày tháng trên thanh trạng thái</string>
   <string name="status_bar_logo_summary">Bật hoặc tắt biểu tượng Resurrection trên thanh trạng thái. Tùy chỉnh màu sắc và vị trí</string>

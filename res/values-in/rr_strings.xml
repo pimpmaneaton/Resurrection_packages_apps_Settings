@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Tengah-memantul</string>
   <string name="battery_bar_style_reversed">Terbalik</string>
   <string name="battery_bar_use_charging_color_title">Kostum warna pengisian</string>
-  <string name="battery_bar_blend_color_title">Warna campuran</string>
-  <string name="battery_bar_blend_color_summary">Campurkan warna penuh/kosong sesuai dengan persentase baterai</string>
-  <string name="battery_bar_blend_color_reverse_title">Arah warna terbalik</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Penuh → kosong: merah ← hijau ← biru ← merah</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Penuh → kosong: merah → hijau → biru → merah</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Sesuaikan berbagai elemen dari statusbar, jam dan tanggal</string>
   <string name="status_bar_logo_summary">Aktifkan atau nonaktifkan logo Resurrection di status bar. Sesuaikan warna dan posisi</string>

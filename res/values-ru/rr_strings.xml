@@ -427,11 +427,6 @@
   <string name="battery_bar_style_center_mirrored">По центру (зеркально)</string>
   <string name="battery_bar_style_reversed">В обратную сторону</string>
   <string name="battery_bar_use_charging_color_title">Установить свой цвет полосы во время зарядки</string>
-  <string name="battery_bar_blend_color_title">Смешать цвета</string>
-  <string name="battery_bar_blend_color_summary">Смешать цвета, соответствующие проценту заряда батареи</string>
-  <string name="battery_bar_blend_color_reverse_title">Обратное направление цвета</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Полный → пустой: красный← зеленый ←синий ← красный</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Полный → пустой: красный→ зеленый →синий → красный</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Настроить различные элементы часов и даты в строке состояния</string>
   <string name="status_bar_logo_summary">Включить или выключить логотип RR в строке состояния. Настройте цвет и расположение логотипа</string>

@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Odzwierciedlenie w centrum</string>
   <string name="battery_bar_style_reversed">Odwrócony</string>
   <string name="battery_bar_use_charging_color_title">Własny kolor podczas ładowania</string>
-  <string name="battery_bar_blend_color_title">Mieszaj kolory</string>
-  <string name="battery_bar_blend_color_summary">Mieszaj pełne/puste kolory odpowiadające procentom baterii</string>
-  <string name="battery_bar_blend_color_reverse_title">Odwróć kolory</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Pełny → pusty: czerwony ← zielony ← niebieski ← czerwony</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Pełny → pusty: czerwony → zielony → niebieski → czerwony</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Dostosuj różne elementy zegara i daty paska powiadomień</string>
   <string name="status_bar_logo_summary">Włącz lub wyłącz logo Resurrection na pasku stanu. Dostosuj kolor i pozycję</string>

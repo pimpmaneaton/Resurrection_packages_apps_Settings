@@ -369,9 +369,6 @@
   <string name="battery_bar_style_regular">標準 （左寄せ）</string>
   <string name="battery_bar_style_center_mirrored">中央寄せ</string>
   <string name="battery_bar_style_reversed">反転</string>
-  <string name="battery_bar_blend_color_title">色のブレンド</string>
-  <string name="battery_bar_blend_color_summary">バッテリー残量に応じてフル/残量低下時の色をブレンドする</string>
-  <string name="battery_bar_blend_color_reverse_title">色の順番を逆転させる</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">ステータスバーの時計と日付のさまざまな要素をカスタマイズします。</string>
   <string name="status_bar_logo_summary">ステータスバーにおけるResurrectionロゴの表示有無、色と位置をカスタマイズします</string>

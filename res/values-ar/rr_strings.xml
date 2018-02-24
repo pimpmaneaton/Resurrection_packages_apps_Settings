@@ -407,11 +407,6 @@
   <string name="battery_bar_style_center_mirrored">معكوس من المركز</string>
   <string name="battery_bar_style_reversed">عكس</string>
   <string name="battery_bar_use_charging_color_title">لون شحن البطارية مخصص</string>
-  <string name="battery_bar_blend_color_title">مزج الألوان</string>
-  <string name="battery_bar_blend_color_summary">مزج الألوان كامل / فارغ تبعاً لنسبة البطارية</string>
-  <string name="battery_bar_blend_color_reverse_title">إتجاه الألوان عكسي</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">كاملة 《 فارغة: أحمر《 أخضر《أزرق《 أحمر</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">ممتلئة ← فارغة: أحمر ← أخضر ← أزرق ← أحمر</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">تخصيص عناصر مختلفة للساعة والتاريخ في شريط الحالة</string>
   <string name="status_bar_logo_summary">تمكين أو تعطيل شعار القيامة في شريط المعلومات. تخصيص اللون والموقف</string>

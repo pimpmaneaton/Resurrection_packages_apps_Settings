@@ -403,8 +403,6 @@
   <string name="battery_bar_style_center_mirrored">Keskitettu-heijastava</string>
   <string name="battery_bar_style_reversed">Käänteinen</string>
   <string name="battery_bar_use_charging_color_title">Kustomoitu lataustilan väri</string>
-  <string name="battery_bar_blend_color_title">Sekoita värit</string>
-  <string name="battery_bar_blend_color_summary">Sekoita täysi/tyhjä värit vastaamaan akun määrää</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Mukauta useita tilapalkin kellon ja päivämäärän elementtejä</string>
   <string name="status_bar_logo_summary">Ota tai poista käytöstä tilapalkin Resurrection logo. Mukauta väriä ja sijaintia</string>

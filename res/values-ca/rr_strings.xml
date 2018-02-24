@@ -429,11 +429,6 @@
   <string name="battery_bar_style_center_mirrored">Centrat-simètric</string>
   <string name="battery_bar_style_reversed">Capgirat</string>
   <string name="battery_bar_use_charging_color_title">Color de pantalla personalitzat</string>
-  <string name="battery_bar_blend_color_title">Barrejar de colors</string>
-  <string name="battery_bar_blend_color_summary">Barreja de colors corresponent al percentatge de bateria plena / buida</string>
-  <string name="battery_bar_blend_color_reverse_title">Invertir la direcció de color</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Plena → buida: vermell ← verd ← blau ← vermell</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Plena → buida: vermell → verd → blau → vermell</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Personalitza diversos elements del rellotge i la data de la barra d\'estat</string>
   <string name="status_bar_logo_summary">Habilita o inhabilita el logotip de Resurrection en statusbar. Personalitza el color i la posició</string>

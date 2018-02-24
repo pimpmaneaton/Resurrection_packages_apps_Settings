@@ -428,11 +428,6 @@ Piksel yoğunluğu <xliff:g name="count" example="520">%d</xliff:g></string>
   <string name="battery_bar_style_center_mirrored">Merkez-yansıtmalı</string>
   <string name="battery_bar_style_reversed">Zıt</string>
   <string name="battery_bar_use_charging_color_title">Özel şarj rengi</string>
-  <string name="battery_bar_blend_color_title">Renkleri karıştır</string>
-  <string name="battery_bar_blend_color_summary">Pil yüzdesine karşılık gelen dolu/boş renkleri karıştır</string>
-  <string name="battery_bar_blend_color_reverse_title">Renk yönünü tersine çevir</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Dolu → boş: kırmızı ← yeşil ← mavi ← kırmızı</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Dolu → boş: kırmızı → yeşil → mavi → kırmızı</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Durum çubuğu saat ve tarihinin çeşitli öğelerini özelleştirin</string>
   <string name="status_bar_logo_summary">Durum çubuğunda Resurrection logosunu etkinleştirin veya devre dışı bırakın. Renk ve konumunu özelleştirin</string>

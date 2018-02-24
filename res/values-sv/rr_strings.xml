@@ -413,9 +413,6 @@
   <string name="battery_bar_style_regular">Vanlig</string>
   <string name="battery_bar_style_center_mirrored">Center - Speglad</string>
   <string name="battery_bar_style_reversed">Omvänd</string>
-  <string name="battery_bar_blend_color_title">Blanda färger</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Fullt → tom: röd ← grön ← blå ← röd</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Fullt → tom: röd → grön → blå → röd</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Anpassa olika delar av klocka och datum i statusfältet</string>
   <string name="status_bar_logo_summary">Aktivera eller inaktivera Resurrection-loggan i statusfältet. Anpassa färg och plats</string>

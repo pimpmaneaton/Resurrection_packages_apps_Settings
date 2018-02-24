@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Zrcadlově na střed</string>
   <string name="battery_bar_style_reversed">Obráceně</string>
   <string name="battery_bar_use_charging_color_title">Vlastní barvy při nabíjení</string>
-  <string name="battery_bar_blend_color_title">Smíšené barvy</string>
-  <string name="battery_bar_blend_color_summary">Smíchání barvy odpovídající procentu baterie - plné/prázdné</string>
-  <string name="battery_bar_blend_color_reverse_title">Obrátit směr barev</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Plná → prázdná: červená ← zelená ← modrá ← červená</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Plná → prázdná: červená → zelená → modrá → červená</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Přizpůsobit různé prvky stavové lišty, hodiny a datum</string>
   <string name="status_bar_logo_summary">Povolit nebo zakázat Resurrection logo ve stavové liště. Přizpůsobit barvu a pozici</string>

@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Centrat-oglindă</string>
   <string name="battery_bar_style_reversed">Inversat</string>
   <string name="battery_bar_use_charging_color_title">Culoare personalizată la încărcare</string>
-  <string name="battery_bar_blend_color_title">Amestec de culori</string>
-  <string name="battery_bar_blend_color_summary">Amestecarea culorilor încărcată/descărcată în corespundere cu procentajul bateriei</string>
-  <string name="battery_bar_blend_color_reverse_title">Inversare direcţie culoare</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Încărcat → descărcat: roşu ← verde ← albastru ← roşu</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Încărcat → descărcat: roşu → verde → albastru → roşu</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Personalizați diferite elemente ale ceasului şi datei în bara de stare</string>
   <string name="status_bar_logo_summary">Activare sau dezactivare siglă Resurrection în bara de stare. Personalizați culoarea şi poziţia</string>

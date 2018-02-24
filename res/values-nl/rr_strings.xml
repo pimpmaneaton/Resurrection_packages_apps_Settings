@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Midden-gespiegeld</string>
   <string name="battery_bar_style_reversed">Omgekeerd</string>
   <string name="battery_bar_use_charging_color_title">Aangepaste oplaadkleur</string>
-  <string name="battery_bar_blend_color_title">Kleuren laten overvloeien</string>
-  <string name="battery_bar_blend_color_summary">Mix vol/leeg kleuren aan de hand van het percentage van de batterij</string>
-  <string name="battery_bar_blend_color_reverse_title">Kleur richting omkeren</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Vol → leeg: rood ← groen ← blauw ← rood</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Vol → leeg: rood → groen → blauw → rood</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Aanpassen van de statusbalk klok en datum weergave</string>
   <string name="status_bar_logo_summary">Toon of verberg het Resurrection beeldmerk in de statusbalk</string>

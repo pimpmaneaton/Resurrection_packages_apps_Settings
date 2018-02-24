@@ -463,7 +463,7 @@
     <string name="show_carrier_enabled">Both</string>
     <string name="status_bar_carrier_size">Carrier label text size</string>
     <string name="status_bar_carrier_font_style_title">Carrier Label Font</string>
-
+    
     <!-- Battery bar -->
     <string name="battery_bar_title">Battery bar</string>
     <string name="battery_bar_position_title">Location</string>
@@ -479,11 +479,6 @@
     <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
     <string name="battery_bar_style_reversed">Reversed</string>
     <string name="battery_bar_use_charging_color_title">Custom charging color</string>
-    <string name="battery_bar_blend_color_title">Blend colors</string>
-    <string name="battery_bar_blend_color_summary">Blend full/empty colors corresponding to battery percentage</string>
-    <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
-    <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
-    <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
 
     <!--RR Configurations Summaries-->
     <string name="clock_custom_summary">Customize various elements of the statusbar clock and date</string>

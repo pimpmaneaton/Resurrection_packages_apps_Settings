@@ -427,11 +427,6 @@
   <string name="battery_bar_style_center_mirrored">Κέντρο με κατοπτρισμό</string>
   <string name="battery_bar_style_reversed">Ανεστραμμένο</string>
   <string name="battery_bar_use_charging_color_title">Προσαρμοσμένο χρώμα ένδειξης φόρτισης</string>
-  <string name="battery_bar_blend_color_title">Ανάμειξη χρωμάτων</string>
-  <string name="battery_bar_blend_color_summary">Ανάμειξη γεμάτων/άδειων χρωμάτων που αντιστοιχούν στο ποσοστό της μπαταρίας</string>
-  <string name="battery_bar_blend_color_reverse_title">Αντίστροφη κατεύθυνση χρώματος</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Πλήρη → άδειο: ← κόκκινο← πράσινο← μπλε ← κόκκινο</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Πλήρη → άδειο: κόκκινο →πράσινο → μπλε → κόκκινο</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Προσαρμόστε διάφορα στοιχεία για το statusbar ρολόι και ημερομηνία</string>
   <string name="status_bar_logo_summary">Ενεργοποίηστε ή απενεργοποίηστε το λογότυπο Resurrection στο statusbar. Προσαρμόσετε το χρώμα και την θέση</string>

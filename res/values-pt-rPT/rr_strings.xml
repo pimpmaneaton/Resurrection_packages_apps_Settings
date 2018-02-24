@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Centro-espelhado</string>
   <string name="battery_bar_style_reversed">Invertida</string>
   <string name="battery_bar_use_charging_color_title">Cor de carregamento personalizada</string>
-  <string name="battery_bar_blend_color_title">Misturar cores</string>
-  <string name="battery_bar_blend_color_summary">Misturar cores cheias/vazias para corresponder com a percentagem da bateria</string>
-  <string name="battery_bar_blend_color_reverse_title">Inverter a direção da cor</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Cheio → vazio: vermelho ← verde ← azul ← vermelho</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Cheio → vazio: vermelho → verde → azul → vermelho</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Personalizar vários elementos relacionados com o relógio e a data da barra de estado</string>
   <string name="status_bar_logo_summary">Ativar ou desativar o logotipo da Resurrection na barra de estado e personalizar cor e posição</string>

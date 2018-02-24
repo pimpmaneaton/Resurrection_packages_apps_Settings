@@ -428,11 +428,6 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <string name="battery_bar_style_center_mirrored">Centro-espelhado</string>
   <string name="battery_bar_style_reversed">Invertido</string>
   <string name="battery_bar_use_charging_color_title">Personalizar cor de carregamento</string>
-  <string name="battery_bar_blend_color_title">Mistura de cores</string>
-  <string name="battery_bar_blend_color_summary">Misturar cores correspondente a porcentagem da bateria</string>
-  <string name="battery_bar_blend_color_reverse_title">Inverter a direção de cor</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Completo → Vazio: vermelho ← verde ← azul ← vermelho</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Completo → Vazio: vermelho ← verde ← azul ← vermelho</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Personalizar vários elementos da barra de status, como por exemplo: relógio e data.</string>
   <string name="status_bar_logo_summary">Personalizar o logotipo da RR na barra de status</string>

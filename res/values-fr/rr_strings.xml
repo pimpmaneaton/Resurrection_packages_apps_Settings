@@ -428,10 +428,13 @@
   <string name="battery_bar_style_center_mirrored">Centre-miroir</string>
   <string name="battery_bar_style_reversed">Inverser</string>
   <string name="battery_bar_use_charging_color_title">Couleur de charge personnalisée</string>
+<<<<<<< HEAD
   <string name="battery_bar_use_gradient_color">Utiliser la graduation de couleur</string>
   <string name="battery_bar_gradient_color_summary">Utiliser un dégradé de couleur comme une échelle indiquant le niveau de batterie</string>
   <string name="battery_bar_high_color">Couleur à haut niveau</string>
   <string name="battery_bar_low_color">Couleur à faible niveau</string>
+=======
+>>>>>>> fd5cd44... Revert "Battery bar [2/2]"
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Personnaliser les différents éléments de la barre d’état, de l’horloge et de la date</string>
   <string name="status_bar_logo_summary">Activer ou désactiver le logo RR-OS dans la barre d\'état. Personnaliser la couleur et la position</string>

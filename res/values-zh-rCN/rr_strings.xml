@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">中心镜像</string>
   <string name="battery_bar_style_reversed">反转</string>
   <string name="battery_bar_use_charging_color_title">选择充电颜色</string>
-  <string name="battery_bar_blend_color_title">混合颜色</string>
-  <string name="battery_bar_blend_color_summary">根据电量百分比混合满/空颜色</string>
-  <string name="battery_bar_blend_color_reverse_title">反转颜色方向</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">由满到空： 红色 ← 绿色 ←蓝色 ← 红色</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">由满到空： 红色 → 绿色 → 蓝色 → 红色</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">自定义状态栏中的时间和日期</string>
   <string name="status_bar_logo_summary">启用或禁用在通知栏的 Resurrection 标志，自定义他们的颜色和位置</string>

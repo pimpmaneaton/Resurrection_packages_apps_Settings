@@ -428,11 +428,6 @@
   <string name="battery_bar_style_center_mirrored">Prema središtu</string>
   <string name="battery_bar_style_reversed">Obrnuto</string>
   <string name="battery_bar_use_charging_color_title">Prilagođena boja punjenja</string>
-  <string name="battery_bar_blend_color_title">Miješanje boja</string>
-  <string name="battery_bar_blend_color_summary">Miješanje punih/praznih boja koje odgovaraju postotku baterije</string>
-  <string name="battery_bar_blend_color_reverse_title">Obrnuti smjer boje</string>
-  <string name="battery_bar_blend_color_reverse_summary_off">Puno → prazno: crvena ← zelena ← plava ← crvena</string>
-  <string name="battery_bar_blend_color_reverse_summary_on">Puno → prazno: crvena → zelena → plava → crvena</string>
   <!--RR Configurations Summaries-->
   <string name="clock_custom_summary">Prilagođavajte razne elemente sata i datuma u statusnoj traci.</string>
   <string name="status_bar_logo_summary">Omogućite ili onemogućite Resurrectionov logotip u statusnoj traci. Prilagodite boju i položaj.</string>
