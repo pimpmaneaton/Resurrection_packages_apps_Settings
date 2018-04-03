@@ -19,8 +19,10 @@
 package com.android.settings.rr.animation;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -28,7 +30,10 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
-
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import com.android.internal.util.rr.AwesomeAnimationHelper;
 
 import com.android.settings.R;
@@ -51,11 +56,11 @@ public class AnimationControls extends SettingsPreferenceFragment
     private static final String TASK_CLOSE = "task_close";
     private static final String TASK_MOVE_TO_FRONT = "task_move_to_front";
     private static final String TASK_MOVE_TO_BACK = "task_move_to_back";
-    private static final String ANIMATION_NO_OVERRIDE = "animation_no_override";
     private static final String WALLPAPER_OPEN = "wallpaper_open";
     private static final String WALLPAPER_CLOSE = "wallpaper_close";
     private static final String WALLPAPER_INTRA_OPEN = "wallpaper_intra_open";
     private static final String WALLPAPER_INTRA_CLOSE = "wallpaper_intra_close";
+        private static final String TASK_OPEN_BEHIND = "task_open_behind";
 
     ListPreference mActivityOpenPref;
     ListPreference mActivityClosePref;
@@ -67,7 +72,8 @@ public class AnimationControls extends SettingsPreferenceFragment
     ListPreference mWallpaperClose;
     ListPreference mWallpaperIntraOpen;
     ListPreference mWallpaperIntraClose;
-    SwitchPreference mAnimNoOverride;
+        ListPreference mTaskOpenBehind;
+
 
     private int[] mAnimations;
     private String[] mAnimationsStrings;
@@ -89,13 +95,10 @@ public class AnimationControls extends SettingsPreferenceFragment
         mAnimationsStrings = new String[animqty];
         mAnimationsNum = new String[animqty];
         for (int i = 0; i < animqty; i++) {
-            mAnimationsStrings[i] = AwesomeAnimationHelper.getProperName(getActivity(), mAnimations[i]);
+                mAnimationsStrings[i] = AwesomeAnimationHelper.getProperName(getActivity().getApplicationContext(), mAnimations[i]);
             mAnimationsNum[i] = String.valueOf(mAnimations[i]);
         }
 
-        //mAnimNoOverride = (SwitchPreference) findPreference(ANIMATION_NO_OVERRIDE);
-        //mAnimNoOverride.setChecked(Settings.System.getBoolean(mContentRes,
-        //        Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE, false));
 
         mActivityOpenPref = (ListPreference) findPreference(ACTIVITY_OPEN);
         mActivityOpenPref.setOnPreferenceChangeListener(this);
@@ -156,19 +159,14 @@ public class AnimationControls extends SettingsPreferenceFragment
         mWallpaperIntraClose.setSummary(getProperSummary(mWallpaperIntraClose));
         mWallpaperIntraClose.setEntries(mAnimationsStrings);
         mWallpaperIntraClose.setEntryValues(mAnimationsNum);
-    }
+            mTaskOpenBehind = (ListPreference) findPreference(TASK_OPEN_BEHIND);
+            mTaskOpenBehind.setOnPreferenceChangeListener(this);
+            mTaskOpenBehind.setSummary(getProperSummary(mTaskOpenBehind));
+            mTaskOpenBehind.setEntries(mAnimationsStrings);
+            mTaskOpenBehind.setEntryValues(mAnimationsNum);
 
-    //@Override
-    //public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
-    //                                     Preference preference) {
-    //   if (preference == mAnimNoOverride) {
-    //        Settings.System.putBoolean(mContentRes,
-    //                Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE,
-    //                    mAnimNoOverride.isChecked());
-    //        return true;
-    //    }
-    //    return false;
-    //}
+        }
+
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -214,6 +212,10 @@ public class AnimationControls extends SettingsPreferenceFragment
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(resolver,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[9], val);
+            } else if (preference == mTaskOpenBehind) {
+                int val = Integer.parseInt((String) newValue);
+                result = Settings.System.putInt(resolver,
+                        Settings.System.ACTIVITY_ANIMATION_CONTROLS[10], val);
         }
         preference.setSummary(getProperSummary(preference));
         return result;
@@ -241,7 +243,9 @@ public class AnimationControls extends SettingsPreferenceFragment
             mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[8];
         } else if (preference == mWallpaperIntraClose) {
             mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[9];
-        }
+            } else if (preference == mTaskOpenBehind) {
+                mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[10];
+            }
 
         int mNum = Settings.System.getInt(getActivity().getContentResolver(), mString, 0);
         return mAnimationsStrings[mNum];
