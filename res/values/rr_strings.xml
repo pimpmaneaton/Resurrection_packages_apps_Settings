@@ -1921,4 +1921,8 @@
    <string name="menu_show_substratum">Show overlays</string>
    <string name="menu_hide_substratum">Hide overlays</string>
 
+    <!-- System default animation -->
+   <string name="system_default_animation_title">Android P animation style</string>
+   <string name="system_default_animation_summary">Enable Android P \"Default\" animations</string>
+
 </resources>
