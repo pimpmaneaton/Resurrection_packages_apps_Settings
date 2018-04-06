@@ -252,7 +252,7 @@
 
   <string name="device_trltexx" translatable="false">Galaxy Note 4 int Snapdragon</string>
   <string name="device_trltexx_codename" translatable="false">N910F</string>
-  <string name="device_trltexx_maintainer" translatable="false">Mobspyguy</string>
+  <string name="device_trltexx_maintainer" translatable="false">mobspyguy</string>
 
   <string name="device_treltexx" translatable="false">Galaxy Note 4 Exynos</string>
   <string name="device_treltexx_codename" translatable="false">N910C/H</string>
@@ -500,7 +500,7 @@
 
   <string name="device_osprey" translatable="false">Moto G 2015 </string>
   <string name="device_osprey_codename" translatable="false">Osprey</string>
-  <string name="device_osprey_maintainer" translatable="false">Pavan Jadhaw (Arcade)</string>
+  <string name="device_osprey_maintainer" translatable="false">Subins Mani</string>
 
   <string name="device_athene" translatable="false">Moto G4 Plus</string>
   <string name="device_athene_codename" translatable="false">athene</string>
