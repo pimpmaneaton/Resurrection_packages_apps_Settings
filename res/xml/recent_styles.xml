@@ -54,6 +54,13 @@
             android:defaultValue="0"
             android:dependency="recents_rotate_fab" />
 
+        <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+            android:key="systemui_recents_mem_display"
+            android:title="@string/systemui_recents_mem_display_title"
+            android:summaryOn="@string/systemui_recents_mem_display_summaryOn"
+            android:summaryOff="@string/systemui_recents_mem_display_summaryOff"
+            android:defaultValue="false" />
+
 
            </PreferenceCategory>
 
@@ -77,13 +84,13 @@
         android:key="mem_bar_color"
         android:title="@string/mem_bar_color"
         android:defaultValue="0xff009688" 
-        android:dependency="clear_recents_style_enable"/>
+        android:dependency="systemui_recents_mem_display"/>
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="mem_text_color"
         android:title="@string/mem_text_color"
         android:defaultValue="0xffffffff" 
-        android:dependency="clear_recents_style_enable"/>
+        android:dependency="systemui_recents_mem_display"/>
 
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
