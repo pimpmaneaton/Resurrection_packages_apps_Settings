@@ -1740,9 +1740,6 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <!-- Extra Info -->
   <string name="lsextrainfo">Informations supplémentaires</string>
   <string name="lsextrainfo_summary">Afficher des informations supplémentaires pour cpu, affichage, etc</string>
-  <!-- aLogcat -->
-  <string name="alogcat_title">aLogcat</string>
-  <string name="alogcat_summary">Permet la lecture des logs système</string>
   <!-- reset color --> 
   <string name="colors_reset_title">Réinitialiser la couleur</string>
   <string name="colors_reset_message">Êtes-vous sûr de vouloir réinitialiser les couleurs par défaut ?</string>

@@ -1992,4 +1992,8 @@
     <string name="qs_footer_services_summary">Display Running Services icon in quick settings footer</string>
     <string name="qs_footer_settings_title">Show Settings icon</string>
     <string name="qs_footer_settings_summary">Display Settings icon in quick settings footer</string>	
+
+    <!-- reset color -->
+    <string name="colors_reset_title">Reset color</string>
+    <string name="colors_reset_message">Are you sure you want to reset these colors to default?</string>
 </resources>
