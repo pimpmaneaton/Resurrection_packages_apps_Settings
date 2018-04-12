@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Rânduri în modul peisaj</string>
   <string name="qs_columns_portrait_title">Rânduri în modul portret</string>
   <string name="qs_columns_landscape_title">Rânduri în modul peisaj</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Selector de Culoare</string>
-  <string name="press_color_to_apply">Apăsaţi pe culoarea de mai jos pentru a aplica</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hexazecimal:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Setare</string>
-  <string name="color_default">Prestabilit</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blocare senzor per pachet</string>
   <string name="sensor_block_summary">Blocați accesul unor aplicații la anumiţi senzori pentru a economisi bateria.</string>

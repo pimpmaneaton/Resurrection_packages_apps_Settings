@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Csempesorok száma fekvő módban</string>
   <string name="qs_columns_portrait_title">Oszlopok száma álló helyzetben</string>
   <string name="qs_columns_landscape_title">Oszlopok száma fekvő módban</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Színválasztó</string>
-  <string name="press_color_to_apply">Érintse meg a színt az alkalmazáshoz</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Beállít</string>
-  <string name="color_default">Alapértelmezett</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Érzékelő csomagonkénti blokkolása</string>
   <string name="sensor_block_summary">Blokkolja a hozzáférést bizonyos érzékelőkhöz egyes alkalmazásoknál az akkumulátor kímélése érdekében.</string>

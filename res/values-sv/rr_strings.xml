@@ -452,15 +452,6 @@
   <string name="qs_rows_landscape_title">Antal rader vid landskap</string>
   <string name="qs_columns_portrait_title">Antal kolumner vid porträtt</string>
   <string name="qs_columns_landscape_title">Antal kolumner vid landskap</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Färgväljare</string>
-  <string name="press_color_to_apply">Tryck på en färg nedan för att tillämpa</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Välj</string>
-  <string name="color_default">Standard</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blockera sensor per paket</string>
   <string name="sensor_block_summary">Blockera åtkomst till vissa sensorer för vissa appar för att spara på batteriet.</string>

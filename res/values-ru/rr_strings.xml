@@ -487,15 +487,6 @@
   <string name="qs_rows_landscape_title">Количество строк (ландшафт)</string>
   <string name="qs_columns_portrait_title">Количество колонок (портрет)</string>
   <string name="qs_columns_landscape_title">Количество колонок (ландшафт)</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Выбор цвета</string>
-  <string name="press_color_to_apply">Нажмите на цвет ниже для применения</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Применить</string>
-  <string name="color_default">По умолчанию</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Блокировка датчиков попакетно</string>
   <string name="sensor_block_summary">Заблокировать доступ к датчикам для некоторых приложений для экономии заряда батареи.</string>

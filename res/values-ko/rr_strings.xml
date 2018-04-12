@@ -463,7 +463,6 @@
   <string name="rr_notif_settings_summary">알림 패널의 알림 스타일을 설정합니다.</string>
   <string name="rr_fp_summary">지문 센서에 대한 여러 옵션을 설정합니다.</string>
   <!-- QS rows and columns -->
-  <!-- Color Picker -->
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">패키지별 센서 차단</string>
   <string name="sensor_block_summary">배터리 절약을 위해 일부 앱들이 특정 센서에 접근하는 것을 방지합니다.</string>

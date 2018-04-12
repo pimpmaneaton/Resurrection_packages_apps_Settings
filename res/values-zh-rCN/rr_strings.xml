@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">列数（横向）</string>
   <string name="qs_columns_portrait_title">列数（纵向）</string>
   <string name="qs_columns_landscape_title">列数（横向）</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">颜色选择器</string>
-  <string name="press_color_to_apply">点击下面的颜色以应用</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">设置</string>
-  <string name="color_default">默认</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止某些应用访问传感器</string>
   <string name="sensor_block_summary">阻止某些应用访问特定的传感器以节省电池电量。</string>

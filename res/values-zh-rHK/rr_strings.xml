@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">圖塊行橫向</string>
   <string name="qs_columns_portrait_title">圖塊列縱向</string>
   <string name="qs_columns_landscape_title">圖塊列橫向</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">調色盤</string>
-  <string name="press_color_to_apply">輕觸下方顏色以套用</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">十六進位：</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">設定</string>
-  <string name="color_default">預設</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止個別套件存取傳感器</string>
   <string name="sensor_block_summary">阻止應用程式存取某些感應器來省電</string>

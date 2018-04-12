@@ -487,15 +487,6 @@
   <string name="qs_rows_landscape_title">Σειρές πλακιδίων σε τοπίο</string>
   <string name="qs_columns_portrait_title">Στήλες πλακιδίων σε πορτρέτο</string>
   <string name="qs_columns_landscape_title">Στήλες πλακιδίων σε τοπίο</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Επιλογέας χρώματος</string>
-  <string name="press_color_to_apply">Πατήστε στο χρώμα κάτω για να εφαρμοστεί</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Ορισμός</string>
-  <string name="color_default">Προεπιλεγμένο</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Μπλοκάρισμα αισθητήρα ανά πακέτο</string>
   <string name="sensor_block_summary">Περιορίστε την πρόσβαση ορισμένων εφαρμογών σε μερικούς αισθητήρες, για εξοικονόμηση μπαταρίας</string>

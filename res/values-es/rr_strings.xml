@@ -489,15 +489,6 @@ https://plus.google.com/communities/109352646351468373340</string>
   <string name="qs_rows_landscape_title">Filas en modo horizontal</string>
   <string name="qs_columns_portrait_title">Columnas en modo vertical</string>
   <string name="qs_columns_landscape_title">Columnas de iconos en modo apaisado</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Selector de color</string>
-  <string name="press_color_to_apply">Presione en un color de abajo para aplicar</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Establecer</string>
-  <string name="color_default">Predeterminado</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Bloqueo de sensor por paquete</string>
   <string name="sensor_block_summary">Bloquea el acceso a ciertos sensores de algunas aplicaciones para ahorrar batería.</string>

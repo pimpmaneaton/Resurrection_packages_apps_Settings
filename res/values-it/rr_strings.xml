@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Righe dei tile in orizzontale</string>
   <string name="qs_columns_portrait_title">Colonne dei tile in verticale</string>
   <string name="qs_columns_landscape_title">Colonne dei tile in orizzontale</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Selettore del colore</string>
-  <string name="press_color_to_apply">Premi sul colore qui sotto per applicarlo</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Esadecimale:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Imposta</string>
-  <string name="color_default">Predefinita</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blocco sensori per app</string>
   <string name="sensor_block_summary">Impedisce alle applicazioni di accedere a determinati sensori e risparmiare energia.</string>

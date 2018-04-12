@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Baris ubin pada tampilan landscape</string>
   <string name="qs_columns_portrait_title">Kolom ubin pada tampilan potret</string>
   <string name="qs_columns_landscape_title">Kolom ubin pada tampian mendatar</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Pemilih Warna</string>
-  <string name="press_color_to_apply">Tekan pada warna di bawah untuk menerapkan</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Setel</string>
-  <string name="color_default">Bawaan</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Sensor blok per-paket</string>
   <string name="sensor_block_summary">Blokir akses ke sensor tertentu untuk beberapa aplikasi untuk menghemat baterai.</string>

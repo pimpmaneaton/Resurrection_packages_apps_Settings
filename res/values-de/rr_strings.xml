@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Kachel-Zeilen im Querformat</string>
   <string name="qs_columns_portrait_title">Kachel-Spalten im Hochformat</string>
   <string name="qs_columns_landscape_title">Kachel-Spalten im Querformat</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Farbauswahl</string>
-  <string name="press_color_to_apply">Zum Festlegen auf die Farbe unten tippen</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Festlegen</string>
-  <string name="color_default">Standard</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Sensorblockierung je Anwendung</string>
   <string name="sensor_block_summary">Den Zugriff auf bestimmte Sensoren für manche Apps blockieren, um Akku zu sparen.</string>

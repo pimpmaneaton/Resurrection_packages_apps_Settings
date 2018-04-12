@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Lignes de tuiles en mode paysage</string>
   <string name="qs_columns_portrait_title">Colonnes de tuiles en mode portrait</string>
   <string name="qs_columns_landscape_title">Colonnes de tuiles en mode paysage</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Outil Pipette</string>
-  <string name="press_color_to_apply">Appuyez sur la couleur ci-dessous pour appliquer</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hexa:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Définir </string>
-  <string name="color_default">Par Défaut</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blocage du capteur par paquet</string>
   <string name="sensor_block_summary">Bloquer l’accès aux capteurs pour certaines applications afin d\'économiser la batterie.</string>

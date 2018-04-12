@@ -488,15 +488,6 @@ Piksel yoğunluğu <xliff:g name="count" example="520">%d</xliff:g></string>
   <string name="qs_rows_landscape_title">Yatay modda satırlar</string>
   <string name="qs_columns_portrait_title">Dikey modda sütunlar</string>
   <string name="qs_columns_landscape_title">Yatay modda sütunlar</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Renk Seçici</string>
-  <string name="press_color_to_apply">Uygulamak için aşağıdaki renge dokunun</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Ayarla</string>
-  <string name="color_default">Varsayılan</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Uygulama başına sensör engelleme</string>
   <string name="sensor_block_summary">Bazı uygulamaların pil tasarrufu yapması için belirli sensörlere erişimi engelleyin.</string>

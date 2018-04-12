@@ -271,7 +271,6 @@
   <string name="rr_notif_settings_summary">Прилагодите изглед обавештења у панелу обавештења</string>
   <string name="rr_fp_summary">Прилагођавање разних опција везаних за отисак прста</string>
   <!-- QS rows and columns -->
-  <!-- Color Picker -->
   <!-- Sensor block per-package -->
   <!-- Weather - OmniJaws Settings -->
   <string name="status_bar_weather_size_title">Величина фонта</string>

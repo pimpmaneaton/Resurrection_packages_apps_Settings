@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Redci pločica u pejzažu</string>
   <string name="qs_columns_portrait_title">Stupci pločica u portretu</string>
   <string name="qs_columns_landscape_title">Stupci pločica u pejzažu</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Odabir boje</string>
-  <string name="press_color_to_apply">Dodirnite boju ispod za primjenu</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex kôd:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Postavi</string>
-  <string name="color_default">Zadana</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blokiranje senzora</string>
   <string name="sensor_block_summary">Blokirajte pristup određenim senzorima nekim aplikacijama da bi se uštedjela energija.</string>

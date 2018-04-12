@@ -256,10 +256,6 @@
   <!--RR Configurations Summaries-->
   <string name="system_app_remover_summary">Fjern unødvendige system apper</string>
   <!-- QS rows and columns -->
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Fargevelger</string>
-  <string name="press_color_to_apply">Trykk på en av fargene under for å angi den</string>
-  <string name="color_default">Standard</string>
   <!-- Sensor block per-package -->
   <!-- Weather - OmniJaws Settings -->
   <string name="weather_title">Vær</string>

@@ -420,11 +420,6 @@
   <string name="rr_trans_summary">Mukauta useita ilmoituslistan elementtejä, kuten läpikuultavuutta ja vetoa</string>
   <string name="rr_np_summary">Muokkaa pika-asetuksia ja ilmoituspaneelia</string>
   <!-- QS rows and columns -->
-  <!-- Color Picker -->
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Aseta</string>
-  <string name="color_default">Oletus</string>
   <!-- Sensor block per-package -->
   <!-- Weather - OmniJaws Settings -->
   <string name="status_bar_weather_size_title">Fonttikoko</string>

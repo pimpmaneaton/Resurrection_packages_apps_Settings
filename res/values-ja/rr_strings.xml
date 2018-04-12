@@ -417,14 +417,6 @@
   <string name="rr_notif_settings_summary">通知パネルでの通知の外観をカスタマイズする</string>
   <string name="rr_fp_summary">指紋センサーのさまざまなオプションをカスタマイズする</string>
   <!-- QS rows and columns -->
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">カラーピッカー</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">設定</string>
-  <string name="color_default">デフォルト</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">パッケージごとのセンサーの無効化</string>
   <string name="sensor_block_summary">バッテリーを節約するためにアプリから特定のセンサーへのアクセスを無効化</string>

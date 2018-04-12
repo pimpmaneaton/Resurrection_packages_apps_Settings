@@ -489,15 +489,6 @@
   <string name="qs_rows_landscape_title">Files d\'icones en mode horitzontal</string>
   <string name="qs_columns_portrait_title">Columnes d\'icones en mode vertical</string>
   <string name="qs_columns_landscape_title">Columnes d\'icones en mode horitzontal</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Selector de colors</string>
-  <string name="press_color_to_apply">Premeu un color de sota per aplicar els canvis</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Estableix</string>
-  <string name="color_default">Predeterminat</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Bloqueix de sensor per paquet</string>
   <string name="sensor_block_summary">Bloqueja l\'accés a determinats sensors per a algunes aplicacions per estalviar bateria.</string>

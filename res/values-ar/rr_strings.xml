@@ -458,15 +458,6 @@
   <string name="qs_rows_landscape_title">صفوف البلاط في وضع عريض</string>
   <string name="qs_columns_portrait_title">أعمدة البلاط في وضع قائم</string>
   <string name="qs_columns_landscape_title">أعمدة البلاط في وضع عريض</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">منتقي الألوان</string>
-  <string name="press_color_to_apply">إضغط على اللون أدناه لاستخدامه</string>
-  <string name="arrow_right">⁦➡️⁩</string>
-  <string name="arrow_down">⁦⬇️⁩</string>
-  <string name="hex">السادس عشري:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">حدد</string>
-  <string name="color_default">إفتراضي</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">منع الاستشعار لكل حزمة</string>
   <string name="sensor_block_summary">منع الوصول إلى بعض أجهزة الاستشعار لبعض التطبيقات لحفظ البطارية.</string>

@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Počet riadkov dlaždíc na šírku</string>
   <string name="qs_columns_portrait_title">Počet stĺpcov dlaždíc na výšku</string>
   <string name="qs_columns_landscape_title">Počet stĺpcov dlaždíc na šírku</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Výber farby</string>
-  <string name="press_color_to_apply">Kliknite na farbu, ktorú chcete použiť</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Nastaviť</string>
-  <string name="color_default">Predvolená</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Zablokovať senzory</string>
   <string name="sensor_block_summary">Zablokovanie prístupu k niektorým senzorom pre niektoré aplikácie, za účelom úspory energie.</string>

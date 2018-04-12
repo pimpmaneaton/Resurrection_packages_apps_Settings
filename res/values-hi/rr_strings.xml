@@ -439,13 +439,6 @@
   <string name="rr_battery_summary">स्थिति में बैटरी तत्वों को अनुकूलित और भी batterybar अनुकूलित</string>
   <string name="rr_sb_icons_summary">स्थिति में अपनी पसंद के चिह्नों को सक्षम या अक्षम करें</string>
   <!-- QS rows and columns -->
-  <!-- Color Picker -->
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">हेक्स:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">स्थापित करे</string>
-  <string name="color_default">डिफ़ाल्ट</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">प्रति पैकेज के लिए सेंसर वर्जित करे</string>
   <string name="sensor_block_summary">कुछ अनुप्रयोगों को बैटरी बचाने के लिए कुछ सेंसरों तक पहुँच वर्जित करे।</string>

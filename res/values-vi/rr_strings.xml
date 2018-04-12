@@ -489,15 +489,6 @@ Mật độ điểm ảnh
   <string name="qs_rows_landscape_title">Dãy ô theo chiều ngang</string>
   <string name="qs_columns_portrait_title">Dãy ô theo chiều dọc</string>
   <string name="qs_columns_landscape_title">Cột gạch theo chiều ngang</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Bảng Chọn Màu</string>
-  <string name="press_color_to_apply">Chạm vào màu bên dưới để áp dụng</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Đặt</string>
-  <string name="color_default">Mặc định</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Cảm biến chặn mỗt gói</string>
   <string name="sensor_block_summary">Chặn quyền truy cập vào một số cảm biến cho một số ứng dụng để tiết kiệm pin.</string>

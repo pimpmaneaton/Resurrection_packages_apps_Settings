@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Tegel rijen in landschap</string>
   <string name="qs_columns_portrait_title">Tegel kolommen in portret</string>
   <string name="qs_columns_landscape_title">Tegel kolommen in landschap</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Kleurkiezer</string>
-  <string name="press_color_to_apply">Druk op kleur hieronder om toe te passen</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Instellen</string>
-  <string name="color_default">Standaard</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Sensorblokkering per pakket</string>
   <string name="sensor_block_summary">Weiger toegang tot bepaalde sensoren voor bepaalde apps om batterij te besparen.</string>

@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Linhas em modo paisagem</string>
   <string name="qs_columns_portrait_title">Colunas em modo retrato</string>
   <string name="qs_columns_landscape_title">Colunas em modo paisagem</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Seletor de cores</string>
-  <string name="press_color_to_apply">Toque numa das cores abaixo para aplicar</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Definir</string>
-  <string name="color_default">Predefinição</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Restringir o uso dos sensores</string>
   <string name="sensor_block_summary">Bloquear o acesso das aplicações a determinados sensores para economizar bateria.</string>

@@ -488,15 +488,6 @@
   <string name="qs_rows_landscape_title">Ilość kafelków w poziomie</string>
   <string name="qs_columns_portrait_title">Ilość kolumn w pionie</string>
   <string name="qs_columns_landscape_title">Ilość kolumn w poziomie</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Próbnik kolorów</string>
-  <string name="press_color_to_apply">Naciśnij przycisk poniżej aby zastosować kolor</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Ustaw</string>
-  <string name="color_default">Domyślne</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blokada czujników dla aplikacji</string>
   <string name="sensor_block_summary">Blokuj dostęp do niektórych czujników dla części aplikacji, aby oszczędzać baterię</string>
