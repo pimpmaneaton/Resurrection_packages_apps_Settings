@@ -1996,4 +1996,8 @@
     <!-- reset color -->
     <string name="colors_reset_title">Reset color</string>
     <string name="colors_reset_message">Are you sure you want to reset these colors to default?</string>
+
+    <!-- reset color -->
+    <string name="recents_grid_title">Recents grid</string>
+    <string name="recents_grid_summary">Display stock recents in a grid style</string>
 </resources>
