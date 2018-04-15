@@ -1068,7 +1068,7 @@
     <string name="color_picker_fragment_title">Color picker</string>
     <string name="apply_color_title">Apply color</string>
     <string name="edit_hex_title">HEX value</string>
-    <string name="palette_title">Others</string>
+    <string name="palette_title">Resurrection</string>
     <string name="palette_material_title">Material</string>
     <string name="palette_rgb_title">RGB</string>
     <string name="reset_color_title">Reset</string>
