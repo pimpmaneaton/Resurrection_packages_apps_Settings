@@ -2004,4 +2004,7 @@
     <!-- Recents Lock Icon -->
     <string name="recents_lock_title">Recents lock</string>
     <string name="recents_lock_summary">Display lock icon in recent app header</string>
+
+    <!-- OmniSwitch -->
+    <string name="omni_switch_title">OmniSwitch</string>
 </resources>

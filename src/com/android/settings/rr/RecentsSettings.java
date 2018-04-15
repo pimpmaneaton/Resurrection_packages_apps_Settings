@@ -33,11 +33,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.internal.util.omni.OmniSwitchConstants;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.rr.Preferences.MasterSwitchPreference;
+import com.android.settings.rr.utils.Util;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -49,6 +51,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
 
     private PreferenceCategory mStockRecentsCategory;
     private PreferenceCategory mAlternativeRecentsCategory;
+    private MasterSwitchPreference mOmniSwitchPreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +62,9 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
          mStockRecentsCategory = (PreferenceCategory) findPreference(PREF_STOCK_RECENTS_CATEGORY);
          mAlternativeRecentsCategory =
                  (PreferenceCategory) findPreference(PREF_ALTERNATIVE_RECENTS_CATEGORY);
+
+        mOmniSwitchPreference = (MasterSwitchPreference)
+                findPreference(Settings.System.RECENTS_OMNI_SWITCH_ENABLED);
  
          // Alternative recents en-/disabling
          Preference.OnPreferenceChangeListener alternativeRecentsChangeListener =
@@ -80,6 +86,14 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
      @Override
      public void onResume() {
          super.onResume();
+
+        if (isOmniSwitchInstalled()) {
+            mOmniSwitchPreference.setEnabled(true);
+        } else {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.RECENTS_OMNI_SWITCH_ENABLED, 0);
+            mOmniSwitchPreference.setEnabled(false);
+        }
  
          for (int i = 0; i < mAlternativeRecentsCategory.getPreferenceCount(); i++) {
              Preference preference = mAlternativeRecentsCategory.getPreference(i);
@@ -107,6 +121,11 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
          }
          mStockRecentsCategory.setEnabled(!alternativeRecentsEnabled);
      }
+
+    private boolean isOmniSwitchInstalled() {
+        return Util.isPackageEnabled(OmniSwitchConstants.APP_PACKAGE_NAME,
+                getActivity().getPackageManager());
+    }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
