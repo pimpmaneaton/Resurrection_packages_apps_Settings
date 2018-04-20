@@ -2007,4 +2007,8 @@
 
     <!-- OmniSwitch -->
     <string name="omni_switch_title">OmniSwitch</string>
+
+    <!-- Substratum -->
+    <string name="themes_title">Themes</string>
+    <string name="themes_dashboard_summary">Manage your themes</string>
 </resources>
