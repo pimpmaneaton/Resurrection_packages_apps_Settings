@@ -49,4 +49,8 @@
         <item name="android:navigationBarColor">@color/rr_changelog_actionbar_bg</item>
     </style>
 
+    <style name="SecurityDialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:windowBackground">@drawable/security_dialog_corners</item>
+    </style>
+
 </resources>
