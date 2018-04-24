@@ -22,6 +22,7 @@ package com.android.settings.display;
 import com.android.settingslib.CustomDialogPreference;
 
 import android.app.AlertDialog.Builder;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.FontInfo;
@@ -43,6 +44,7 @@ public class FontDialogPreference extends CustomDialogPreference {
     private static final String SUBS_PACKAGE = "projekt.substratum";
     private SharedPreferences prefs;
     private boolean mFirstTimeDialog;
+	private ProgressDialog mProgressDialog;
 
     public FontDialogPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -75,8 +77,10 @@ public class FontDialogPreference extends CustomDialogPreference {
                     FontInfo info = adapter.getItem(which);
                     Toast.makeText(mContext, mContext.getString(R.string.font_picker_reboot_recommended), Toast.LENGTH_LONG).show();
                     try {
+                        startProgress();
                         mFontService.applyFont(info);
                     } catch (RemoteException e) {
+                      stopProgress();
                     }
                 }
             };
@@ -92,6 +96,26 @@ public class FontDialogPreference extends CustomDialogPreference {
     protected void onClick(DialogInterface dialog, int which) {
         if (which == DialogInterface.BUTTON_NEGATIVE) {
             dialog.dismiss();
+        }
+    }
+
+    private void startProgress() {
+        if(mProgressDialog != null) {
+            stopProgress();
+        }
+        mProgressDialog = new ProgressDialog(mContext);
+        mProgressDialog.setIndeterminate(true);
+        mProgressDialog.setTitle(mContext.getString(R.string.font_picker_title));
+        mProgressDialog.setMessage(mContext.getString(R.string.font_picker_progress));
+        mProgressDialog.setCancelable(false);
+        mProgressDialog.setCanceledOnTouchOutside(false);
+        mProgressDialog.show();
+    }
+
+    public void stopProgress() {
+        if (mProgressDialog != null) {
+            mProgressDialog.dismiss();
+            mProgressDialog = null;
         }
     }
 
