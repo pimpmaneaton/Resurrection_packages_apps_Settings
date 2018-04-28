@@ -59,7 +59,7 @@
         settings:units=""
         android:dependency="lock_screen_custom_notif"/>
 
-    <com.android.settings.rr.Preferences.SystemSettingIntListPreference
+    <ListPreference
         android:key="force_ambient_for_media"
         android:entries="@array/force_ambient_for_media_entries"
         android:entryValues="@array/force_ambient_for_media_values"

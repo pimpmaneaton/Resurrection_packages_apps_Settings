@@ -13,7 +13,11 @@
 */
 package com.android.settings.rr;
 
+import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
@@ -30,6 +34,8 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "LockScreenSecurity";
 
+    private ListPreference mAmbientTicker;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.RESURRECTED;
@@ -40,9 +46,30 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rr_ls_ui);
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.ambient_ticker_footer);
+
+        mAmbientTicker = (ListPreference) findPreference("force_ambient_for_media");
+        int mode = Settings.System.getIntForUser(resolver,
+                Settings.System.FORCE_AMBIENT_FOR_MEDIA, 0, UserHandle.USER_CURRENT);
+        mAmbientTicker.setValue(Integer.toString(mode));
+        mAmbientTicker.setSummary(mAmbientTicker.getEntry());
+        mAmbientTicker.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) 		{
-        return true;
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mAmbientTicker) {
+            int mode = Integer.valueOf((String) objValue);
+            int index = mAmbientTicker.findIndexOfValue((String) objValue);
+            mAmbientTicker.setSummary(
+                    mAmbientTicker.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.FORCE_AMBIENT_FOR_MEDIA,
+                    mode, UserHandle.USER_CURRENT);
+            return true;
+        }
+        return false;
     }
 }
