@@ -434,7 +434,7 @@
      </array>
  
      <array name="color_picker_palette">
-         <item>@color/red</item>
+         <item>@color/rr_accent</item>
          <item>@color/lime</item>
          <item>@color/amber</item>
          <item>@color/light_green</item>
