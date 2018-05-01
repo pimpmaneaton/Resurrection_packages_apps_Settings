@@ -20,6 +20,11 @@
     android:title="@string/system_animation_title">
 
         <com.android.settings.rr.Preferences.GlobalSettingSwitchPreference
+            android:key="disable_transition_animations"
+            android:title="@string/disable_transition_animations_title"
+            android:summary="@string/disable_transition_animations_summary" />
+
+        <com.android.settings.rr.Preferences.GlobalSettingSwitchPreference
             android:key="system_default_animation"
             android:title="@string/system_default_animation_title"
             android:summary="@string/system_default_animation_summary" />
