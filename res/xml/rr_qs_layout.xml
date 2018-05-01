@@ -52,6 +52,12 @@
             android:defaultValue="3" />
 
         <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+            android:key="qs_show_mini"
+            android:title="@string/qs_mini_header_title"
+            android:summary="@string/qs_mini_header_summary"
+            android:defaultValue="false"/>
+
+        <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
             android:key="qs_quickbar_scroll_enabled"
             android:title="@string/qqs_scroll_title"
             android:summary="@string/qqs_scroll_summary"

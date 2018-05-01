@@ -2057,4 +2057,8 @@
     <!-- Force disable transition animation -->
     <string name="disable_transition_animations_title">Disable transition animations</string>
     <string name="disable_transition_animations_summary">Force disable all transition animations</string>
+
+    <!-- QS Mini Header -->
+    <string name="qs_mini_header_title">Mini header</string>
+    <string name="qs_mini_header_summary">Makes the expanded header much smaller and hides the icons</string>
 </resources>
