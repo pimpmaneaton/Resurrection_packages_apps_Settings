@@ -50,4 +50,12 @@
             android:summary="@string/keyboard_ime_summury"
             android:fragment="com.android.settings.rr.fragments.IMESettings" />
 
+        <Preference
+            android:key="chooser_activity_blacklist"
+            android:icon="@drawable/rr_notification_drawer_icon"
+            android:fragment="com.android.settings.rr.ChooserActivityBlacklist"
+            android:title="@string/chooser_activity_blacklist_title"
+            android:summary="@string/chooser_activity_blacklist_summary"
+            android:persistent="false" />
+
 </PreferenceScreen>

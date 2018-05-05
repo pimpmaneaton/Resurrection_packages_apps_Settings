@@ -2061,4 +2061,10 @@
     <!-- QS Mini Header -->
     <string name="qs_mini_header_title">Mini header</string>
     <string name="qs_mini_header_summary">Makes the expanded header much smaller and hides the icons</string>
+
+    <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
+    <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on a Share button</string>
+    <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
+    <string name="chooser_activity_blacklist_pref_title">Add app</string>
+    <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
 </resources>
