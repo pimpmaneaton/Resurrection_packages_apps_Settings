@@ -129,6 +129,17 @@
         <item name="android:scrollbarStyle">outsideOverlay</item>
     </style>
 
+    <style name="colorPreferenceStyle" parent="@style/PreferenceStyle">
+	
+    </style>
+
+    <style name="PreferenceStyle" parent="@*android:style/Preference.DeviceDefault">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="singleLineTitle">true</item>
+        <item name="android:layout">@layout/preference_color_picker</item>
+    </style>
+
     <style name="SettingsPreferenceHeaderPanel" parent="@*android:style/PreferenceHeaderPanel">
     </style>
 

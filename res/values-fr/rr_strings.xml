@@ -1748,7 +1748,7 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="color_picker_fragment_title">Pipette de couleur</string>
   <string name="apply_color_title">Appliquer la couleur</string>
   <string name="edit_hex_title">Valeur hexa</string>
-  <string name="palette_title">Autres</string>
+  <string name="palette_title">RR Remixed</string>
   <string name="palette_material_title">Prédéfinie</string>
   <string name="palette_rgb_title">RGB</string>
   <string name="reset_color_title">Réinitialiser</string>

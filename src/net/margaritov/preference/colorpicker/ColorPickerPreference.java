@@ -35,6 +35,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 
 import com.android.settings.SettingsActivity;
@@ -42,6 +43,8 @@ import com.android.settings.R;
 
 import net.margaritov.preference.colorpicker.drawable.ColorViewCircleDrawable;
 import net.margaritov.preference.colorpicker.fragment.ColorPickerFragment;
+import net.margaritov.preference.colorpicker.util.ColorPickerHelper;
+import net.margaritov.preference.colorpicker.widget.ColorViewButton;
 
 /**
  * A preference type that allows a user to choose a color
@@ -52,12 +55,16 @@ public class ColorPickerPreference extends Preference implements
         Preference.OnPreferenceClickListener, ColorPickerFragment.OnColorChangedListener {
     public static final String TAG = "ColorPickerPreference";
 
-    private static final String sAndroidns = "http://schemas.android.com/apk/res/android";
+    private static final String ANDROID_NS      = "http://schemas.android.com/apk/res/android";
+    private static final String DEFAULT_VALUE   = "defaultValue";
 
     private PreferenceViewHolder mViewHolder;
 
     private ColorPickerFragment mPickerFragment;
 
+    LinearLayout widgetFrameView;
+    private float mDensity = 0;
+    private ColorViewButton mPreview;
     private final Resources mResources;
     private int mDefaultValue = Color.BLACK;
     private int mResetColor1 = Color.TRANSPARENT;
@@ -72,7 +79,7 @@ public class ColorPickerPreference extends Preference implements
     }
 
     public ColorPickerPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, android.R.attr.preferenceStyle);
+        this(context, attrs, R.attr.colorPreferenceStyle);
     }
 
     public ColorPickerPreference(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -102,7 +109,7 @@ public class ColorPickerPreference extends Preference implements
             a.recycle();
 
             if (mDefaultValue == Color.TRANSPARENT) {
-                String defaultValue = attrs.getAttributeValue(sAndroidns, "defaultValue");
+                String defaultValue = attrs.getAttributeValue(ANDROID_NS, DEFAULT_VALUE);
                 if (defaultValue != null) {
                     if (defaultValue.startsWith("#")) {
                         try {
@@ -111,7 +118,7 @@ public class ColorPickerPreference extends Preference implements
                             Log.e(TAG, "Wrong color: " + defaultValue);
                         }
                     } else {
-                        int resourceId = attrs.getAttributeResourceValue(sAndroidns, "defaultValue", 0);
+                        int resourceId = attrs.getAttributeResourceValue(ANDROID_NS, DEFAULT_VALUE, Color.TRANSPARENT);
                         if (resourceId != 0) {
                             mDefaultValue = mResources.getInteger(resourceId);
                         }
@@ -124,6 +131,8 @@ public class ColorPickerPreference extends Preference implements
 
             mValue = mDefaultValue;
         }
+        setLayoutResource(R.layout.preference_color_picker);
+        setWidgetLayoutResource(R.layout.preference_widget_color_picker);
     }
 
     @Override
@@ -132,9 +141,24 @@ public class ColorPickerPreference extends Preference implements
     }
 
     @Override
-    public void onBindViewHolder(PreferenceViewHolder holder) {
-        super.onBindViewHolder(holder);
-        mViewHolder = holder;
+    public void onBindViewHolder(PreferenceViewHolder view) {
+        super.onBindViewHolder(view);
+        mViewHolder = view;
+
+       if (view != null) {
+            mPreview = (ColorViewButton) view.findViewById(R.id.color_picker_widget);
+        }
+        if (mPreview != null) {
+            TypedValue tv = new TypedValue();
+            int borderColor;
+            getContext().getTheme().resolveAttribute(android.R.attr.colorControlHighlight, tv, true);
+            if (tv.type >= TypedValue.TYPE_FIRST_COLOR_INT && tv.type <= TypedValue.TYPE_LAST_COLOR_INT) {
+                borderColor = tv.data;
+            } else {
+                borderColor = getContext().getColor(tv.resourceId);
+            }
+            mPreview.setBorderColor(borderColor);
+        }
 
         setPreview();
     }
@@ -143,39 +167,22 @@ public class ColorPickerPreference extends Preference implements
         if (mViewHolder == null)
             return;
 
-        LinearLayout widgetFrameView = ((LinearLayout) mViewHolder
+        widgetFrameView = ((LinearLayout) mViewHolder
                 .findViewById(android.R.id.widget_frame));
-        if (widgetFrameView == null) {
+
+        if (widgetFrameView == null)
             return;
-        }
-
-        widgetFrameView.removeAllViews();
-        float density = mResources.getDisplayMetrics().density;
-        final int size = (int) mResources.getDimension(
-                R.dimen.color_picker_preference_preview_width_height);
-        TypedValue tv = new TypedValue();
-        int borderColor;
-
-        getContext().getTheme().resolveAttribute(android.R.attr.colorControlHighlight, tv, true);
-        if (tv.type >= TypedValue.TYPE_FIRST_COLOR_INT && tv.type <= TypedValue.TYPE_LAST_COLOR_INT) {
-            borderColor = tv.data;
-        } else {
-            borderColor = mResources.getColor(tv.resourceId);
-        }
-
-        View preview = new View(getContext());
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(size, size);
-        ColorViewCircleDrawable drawable = new ColorViewCircleDrawable(getContext(), size);
-
         widgetFrameView.setVisibility(View.VISIBLE);
-        widgetFrameView.setPadding(widgetFrameView.getPaddingLeft(), widgetFrameView.getPaddingTop(),
-                (int) (density * 8), widgetFrameView.getPaddingBottom());
-        preview.setLayoutParams(lp);
-        drawable.setColor(mValue);
-        drawable.setBorderColor(borderColor);
-        preview.setBackground(drawable);
-        widgetFrameView.addView(preview);
-        widgetFrameView.setMinimumWidth(0);
+        widgetFrameView.setPadding(
+                widgetFrameView.getPaddingLeft(),
+                widgetFrameView.getPaddingTop(),
+                (int) (mDensity * 8),
+                widgetFrameView.getPaddingBottom()
+        );
+        if (mPreview != null) {
+            mPreview.setColor(mValue);
+        }
+
     }
 
     private int getValue() {
@@ -328,28 +335,7 @@ public class ColorPickerPreference extends Preference implements
      * @author Unknown
      */
     public static String convertToARGB(int color) {
-        String alpha = Integer.toHexString(Color.alpha(color));
-        String red = Integer.toHexString(Color.red(color));
-        String green = Integer.toHexString(Color.green(color));
-        String blue = Integer.toHexString(Color.blue(color));
-
-        if (alpha.length() == 1) {
-            alpha = "0" + alpha;
-        }
-
-        if (red.length() == 1) {
-            red = "0" + red;
-        }
-
-        if (green.length() == 1) {
-            green = "0" + green;
-        }
-
-        if (blue.length() == 1) {
-            blue = "0" + blue;
-        }
-
-        return "#" + alpha + red + green + blue;
+        return ColorPickerHelper.convertToARGB(color);
     }
 
     /**
@@ -359,28 +345,8 @@ public class ColorPickerPreference extends Preference implements
      * @throws NumberFormatException
      * @author Unknown
      */
-    public static int convertToColorInt(String argb) throws NumberFormatException {
-
-        if (argb.startsWith("#")) {
-            argb = argb.replace("#", "");
-        }
-
-        int alpha = -1, red = -1, green = -1, blue = -1;
-
-        if (argb.length() == 8) {
-            alpha = Integer.parseInt(argb.substring(0, 2), 16);
-            red = Integer.parseInt(argb.substring(2, 4), 16);
-            green = Integer.parseInt(argb.substring(4, 6), 16);
-            blue = Integer.parseInt(argb.substring(6, 8), 16);
-        }
-        else if (argb.length() == 6) {
-            alpha = 255;
-            red = Integer.parseInt(argb.substring(0, 2), 16);
-            green = Integer.parseInt(argb.substring(2, 4), 16);
-            blue = Integer.parseInt(argb.substring(4, 6), 16);
-        }
-
-        return Color.argb(alpha, red, green, blue);
+    public static int convertToColorInt(String argb) {
+        return ColorPickerHelper.convertToColorInt(argb);
     }
 
     @Override

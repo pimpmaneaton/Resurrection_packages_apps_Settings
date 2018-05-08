@@ -157,6 +157,7 @@
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
         <item name="preferenceTheme">@style/PreferenceTheme</item>
+        <item name="colorPreferenceStyle">@style/colorPreferenceStyle</item>
         <item name="android:listPreferredItemHeight">72dip</item>
         <item name="*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
         <item name="*android:preferencePanelStyle">@style/PreferencePanelSinglePane</item>
