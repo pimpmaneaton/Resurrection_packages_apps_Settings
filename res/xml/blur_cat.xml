@@ -29,17 +29,17 @@
             android:summary="@string/blur_colors_notice_summary"
             android:selectable="false" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+        <com.android.settings.rr.Preferences.SystemSettingColorPickerPreference
             android:key="blur_light_color"
             android:title="@string/blur_light_color"
             android:defaultValue="0xff444444" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+        <com.android.settings.rr.Preferences.SystemSettingColorPickerPreference
             android:key="blur_dark_color"
             android:title="@string/blur_dark_color"
             android:defaultValue="0xffcccccc" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+        <com.android.settings.rr.Preferences.SystemSettingColorPickerPreference
             android:key="blur_mixed_color"
             android:title="@string/blur_mixed_color"
             android:defaultValue="0xff888888" />

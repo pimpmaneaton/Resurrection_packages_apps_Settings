@@ -34,13 +34,13 @@
             android:entryValues="@array/toast_animation_values"
             android:persistent="false" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+        <com.android.settings.rr.Preferences.SystemSettingColorPickerPreference
             android:key="toast_icon_color"
             android:title="@string/toast_icon_color"
             android:defaultValue="0xffffffff"
             android:dependency="toast_icon" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+        <com.android.settings.rr.Preferences.SystemSettingColorPickerPreference
             android:key="toast_text_color"
             android:title="@string/toast_text_color"
             android:defaultValue="0xff000000" />
