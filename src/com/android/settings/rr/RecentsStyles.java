@@ -96,7 +96,6 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
         intColor = Settings.System.getInt(getContentResolver(),
                     Settings.System.FAB_BUTTON_COLOR, DEFAULT_BG_FAB);
         hexColor = String.format("#%08x", (0xff21272b & intColor));
-        mfabColor.setSummary(hexColor);
         mfabColor.setNewPreviewColor(intColor);
 
 
