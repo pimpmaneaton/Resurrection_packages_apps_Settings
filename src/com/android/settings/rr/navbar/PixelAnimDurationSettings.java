@@ -185,7 +185,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         int top = Settings.System.getInt(mContentRes,
                  Settings.System.DOT_TOP_COLOR, Color.RED);
         String topHexColor = String.format("#%08x", (0x00ffffff & top));
-        mTopColor.setSummary(topHexColor);
         mTopColor.setNewPreviewColor(top);
 
         mBottomColor =
@@ -194,7 +193,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         int bottom = Settings.System.getInt(mContentRes,
                  Settings.System.DOT_BOTTOM_COLOR, Color.YELLOW);
         String bottomHexColor = String.format("#%08x", (0x00ffffff & bottom));
-        mBottomColor.setSummary(bottomHexColor);
         mBottomColor.setNewPreviewColor(bottom);
 
         mRightColor =
@@ -203,7 +201,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         int right = Settings.System.getInt(mContentRes,
                  Settings.System.DOT_RIGHT_COLOR, Color.GREEN);
         String rightHexColor = String.format("#%08x", (0x00ffffff & right));
-        mRightColor.setSummary(rightHexColor);
         mRightColor.setNewPreviewColor(right);
 
         mLeftColor =
@@ -212,7 +209,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         int left = Settings.System.getInt(mContentRes,
                  Settings.System.DOT_LEFT_COLOR, Color.RED);
         String leftHexColor = String.format("#%08x", (0x00ffffff & left));
-        mLeftColor.setSummary(leftHexColor);
         mLeftColor.setNewPreviewColor(left);
 
         mColorStyle =
@@ -275,7 +271,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         } else if (preference == mTopColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(resolver,
                     Settings.System.DOT_TOP_COLOR, intHex);
@@ -283,7 +278,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         } else if (preference == mBottomColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(resolver,
                     Settings.System.DOT_BOTTOM_COLOR, intHex);
@@ -291,7 +285,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         } else if (preference == mRightColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(resolver,
                     Settings.System.DOT_RIGHT_COLOR, intHex);
@@ -299,7 +292,6 @@ public class PixelAnimDurationSettings extends SettingsPreferenceFragment implem
         } else if (preference == mLeftColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(resolver,
                     Settings.System.DOT_LEFT_COLOR, intHex);

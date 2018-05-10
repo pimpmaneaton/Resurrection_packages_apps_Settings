@@ -151,21 +151,18 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
         mLightBlurColor.setOnPreferenceChangeListener(this);
         intLightColor = Settings.System.getInt(getContentResolver(), Settings.System.BLUR_LIGHT_COLOR_PREFERENCE_KEY, BLUR_LIGHT_COLOR_PREFERENCE_DEFAULT);
         hexLightColor = String.format("#%08x", (0xffffffff & intLightColor));
-        mLightBlurColor.setSummary(hexLightColor);
         mLightBlurColor.setNewPreviewColor(intLightColor);
 
         mDarkBlurColor = (ColorPickerPreference) findPreference("blur_dark_color");
         mDarkBlurColor.setOnPreferenceChangeListener(this);
         intDarkColor = Settings.System.getInt(getContentResolver(), Settings.System.BLUR_DARK_COLOR_PREFERENCE_KEY, BLUR_DARK_COLOR_PREFERENCE_DEFAULT);
         hexDarkColor = String.format("#%08x", (0xffffffff & intDarkColor));
-        mDarkBlurColor.setSummary(hexDarkColor);
         mDarkBlurColor.setNewPreviewColor(intDarkColor);
 
         mMixedBlurColor = (ColorPickerPreference) findPreference("blur_mixed_color");
         mMixedBlurColor.setOnPreferenceChangeListener(this);
         intMixedColor = Settings.System.getInt(getContentResolver(), Settings.System.BLUR_MIXED_COLOR_PREFERENCE_KEY, BLUR_MIXED_COLOR_PREFERENCE_DEFAULT);
         hexMixedColor = String.format("#%08x", (0xffffffff & intMixedColor));
-        mMixedBlurColor.setSummary(hexMixedColor);
         mMixedBlurColor.setNewPreviewColor(intMixedColor);
 
         setHasOptionsMenu(true);
@@ -218,7 +215,6 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
         } else if (preference == mLightBlurColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.BLUR_LIGHT_COLOR_PREFERENCE_KEY, intHex);
@@ -226,7 +222,6 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
         } else if (preference == mDarkBlurColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.BLUR_DARK_COLOR_PREFERENCE_KEY, intHex);
@@ -234,7 +229,6 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
         } else if (preference == mMixedBlurColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.BLUR_MIXED_COLOR_PREFERENCE_KEY, intHex);

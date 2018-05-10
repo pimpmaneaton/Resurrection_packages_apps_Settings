@@ -90,7 +90,6 @@ public class ToastAnimations extends SettingsPreferenceFragment implements
                 Settings.System.TOAST_ICON_COLOR, 0xffffffff);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mIconColor.setNewPreviewColor(intColor);
-        mIconColor.setSummary(hexColor);
         mIconColor.setOnPreferenceChangeListener(this);
 
         // Toast text color
@@ -99,7 +98,6 @@ public class ToastAnimations extends SettingsPreferenceFragment implements
                 Settings.System.TOAST_TEXT_COLOR, 0xff000000);
         hexColor = String.format("#%08x", (0xff000000 & intColor));
         mTextColor.setNewPreviewColor(intColor);
-        mTextColor.setSummary(hexColor);
         mTextColor.setOnPreferenceChangeListener(this);
     }
 
@@ -115,7 +113,6 @@ public class ToastAnimations extends SettingsPreferenceFragment implements
             }  else if (preference == mIconColor) {
                 String hex = ColorPickerPreference.convertToARGB(Integer
                        .valueOf(String.valueOf(newValue)));
-                preference.setSummary(hex);
                int intHex = ColorPickerPreference.convertToColorInt(hex);
                 Settings.System.putInt(resolver,
                        Settings.System.TOAST_ICON_COLOR, intHex);
@@ -125,7 +122,6 @@ public class ToastAnimations extends SettingsPreferenceFragment implements
             } else if (preference == mTextColor) {
                 String hex = ColorPickerPreference.convertToARGB(Integer
                       .valueOf(String.valueOf(newValue)));
-                preference.setSummary(hex);
                 int intHex = ColorPickerPreference.convertToColorInt(hex);
                 Settings.System.putInt(resolver,
                       Settings.System.TOAST_TEXT_COLOR, intHex);
@@ -177,10 +173,8 @@ public class ToastAnimations extends SettingsPreferenceFragment implements
 	Settings.System.putInt(resolver,
                  Settings.System.TOAST_TEXT_COLOR, DEFAULT_COLOR_TEXT);
         mTextColor.setNewPreviewColor(DEFAULT_COLOR_TEXT);
-        mTextColor.setSummary(R.string.default_string); 
         Settings.System.putInt(resolver,
                  Settings.System.TOAST_ICON_COLOR, DEFAULT_COLOR_ICON);
         mIconColor.setNewPreviewColor(DEFAULT_COLOR_ICON);
-        mIconColor.setSummary(R.string.default_string);   
 	}  
 }

@@ -129,7 +129,6 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         intColor = Settings.System.getInt(getContentResolver(),
                 Settings.System.NAVBAR_BUTTON_COLOR, DEFAULT_TINT_COLOR);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mNavbuttoncolor.setSummary(hexColor);
         mNavbuttoncolor.setNewPreviewColor(intColor);
 
         int longpressDelayVal = Settings.Secure.getIntForUser(getContentResolver(),
@@ -314,7 +313,6 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         } else if (preference == mNavbuttoncolor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVBAR_BUTTON_COLOR, intHex);
