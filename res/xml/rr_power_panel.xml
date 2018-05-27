@@ -42,4 +42,10 @@
  
      </PreferenceCategory>
 
+        <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+            android:key="wallpaper_power_menu_tint"
+            android:title="@string/wallpaper_tint_power_menu"
+            android:summary="@string/wallpaper_tint_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>

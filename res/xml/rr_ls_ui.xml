@@ -61,6 +61,12 @@
         android:defaultValue="true" />
 
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+        android:key="wallpaper_keyguard_wallpaper_tint"
+        android:title="@string/wallpaper_tint_keyguard"
+        android:summary="@string/wallpaper_tint_summary"
+        android:defaultValue="true" />
+
+    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
         android:key="lock_screen_custom_notif"
         android:title="@string/lockscreen_maxnotif_title"
         android:summary="@string/lockscreen_maxnotif_summary"
