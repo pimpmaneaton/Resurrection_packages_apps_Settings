@@ -299,7 +299,7 @@
     <string name="headset_connect_player_both">When wired or BT headset is connected</string>
 
     <!-- Status Bar Ticker -->
-    <string name="ticker_screen_title">Notification ticker</string>
+    <string name="ticker_screen_title">Notification ticker and count</string>
     <string name="ticker_title">Status bar ticker</string>
     <string name="ticker_summary">Enable the old status bar ticker</string>
     <string name="ticker_restore_defaults_title">Restore defaults</string>
@@ -490,7 +490,7 @@
     <string name="sb_custom_logos_summary">Enable or disable icons in statusbar. Customize their elements and position</string>
     <string name="rr_battery_summary">Customize battery elements in statusbar and also customize the batterybar</string>
     <string name="rr_sb_icons_summary">Enable or disable icons of your choice in statusbar</string>
-    <string name="ticker_screen_summary">Customize the ticker style in statusbar</string>
+    <string name="ticker_screen_summary">Customize the ticker style and enable count icon in statusbar</string>
     <string name="status_bar_temperature_summary">Enable or disable temperature in statusbar and customize its style </string>
     <string name="network_traffic_summary">Enable or disable network traffic monitor in statusbar and customize its style, activity threshold and readings</string>
     <string name="carrier_summary">Enable or disable carrier label in statusbar and customize its style </string>
