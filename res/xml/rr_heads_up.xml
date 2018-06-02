@@ -19,7 +19,7 @@
         android:summary="%s"
         android:entries="@array/heads_up_time_out_entries"
         android:entryValues="@array/heads_up_time_out_values"
-        android:defaultValue="0"
+        android:defaultValue="2000"
         android:dependency="heads_up_notifications_enabled" />
 
     <com.android.settings.rr.Preferences.SystemSettingIntListPreference
