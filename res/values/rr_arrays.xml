@@ -1723,6 +1723,7 @@
         <item>@string/lockscreen_clock_selection_digital_bold</item>
         <item>@string/lockscreen_clock_selection_small</item>
         <item>@string/lockscreen_clock_selection_analog</item>
+        <item>@string/lockscreen_clock_selection_analog_numbers</item>
         <item>@string/lockscreen_clock_selection_analog_deadpool</item>
         <item>@string/lockscreen_clock_selection_analog_spidey</item>
         <item>@string/lockscreen_clock_selection_sammy</item>
@@ -1738,6 +1739,7 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
     </string-array>
 
     <!-- Lockscreen date styles -->
