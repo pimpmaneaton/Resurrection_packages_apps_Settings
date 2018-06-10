@@ -2151,4 +2151,7 @@
 
     <string name="log_category">Notifications history</string>
     <string name="notification_log_summary">Show notifications history log</string>
+
+    <string name="qs_edit_title">Edit Icon</string>
+    <string name="qs_edit_summary">Disable the tile edit icon in the footer</string>
 </resources>
