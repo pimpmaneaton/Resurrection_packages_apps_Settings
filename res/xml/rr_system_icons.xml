@@ -28,6 +28,18 @@
        android:defaultValue="false" />
 
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+       android:key="data_activity_arrows"
+       android:title="@string/data_activity_arrows_title"
+       android:summary="@string/data_activity_arrows_summary"
+       android:defaultValue="false" />
+
+    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+       android:key="wifi_activity_arrows"
+       android:title="@string/wifi_activity_arrows_title"
+       android:summary="@string/wifi_activity_arrows_summary"
+       android:defaultValue="false" />
+
+    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
        android:key="show_lte_fourgee"
        android:title="@string/show_4g_title"
        android:summary="@string/show_4g_summary"
