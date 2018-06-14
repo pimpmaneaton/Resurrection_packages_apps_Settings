@@ -95,6 +95,6 @@
         android:entryValues="@array/force_ambient_for_media_values"
         android:title="@string/force_ambient_for_media_title"
         android:summary="@string/force_ambient_for_media_summary"
-        android:defaultValue="0" />
+        android:defaultValue="2" />
 
 </PreferenceScreen>
