@@ -36,12 +36,12 @@
             android:summary="@string/clear_recents_style_enable_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-            android:key="recents_grid"
-            android:title="@string/recents_grid_title"
-            android:summary="@string/recents_grid_summary"
-            android:defaultValue="false"
-            android:dependency="clear_recents_style_enable" />
+        <com.android.settings.rr.Preferences.SystemSettingIntListPreference
+            android:key="recents_layout_style"
+            android:title="@string/recents_type_title"
+            android:entries="@array/recents_type_title_entries"
+            android:defaultValue="0"
+            android:entryValues="@array/recents_type_title_values"/>
 
         <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
             android:key="recents_lock_icon"
