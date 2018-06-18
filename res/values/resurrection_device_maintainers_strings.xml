@@ -318,6 +318,10 @@
   <string name="device_j5ltexx_codename" translatable="false">SM-J500F/FN/M/G/Y/H</string>
   <string name="device_j5ltexx_maintainer" translatable="false">Dyneteve </string>
 
+  <string name="device_a3xelte" translatable="false">Galaxy A3 2016</string>
+  <string name="device_a3xelte_codename" translatable="false">SM-A310F/M/NO/Y</string>
+  <string name="device_a3xelte_maintainer" translatable="false">McFy</string>
+
   <string name="device_a3y17lte" translatable="false">Galaxy A3 2017</string>
   <string name="device_a3y17lte_codename" translatable="false">SM-A320FL/F/Y</string>
   <string name="device_a3y17lte_maintainer" translatable="false">McFy</string>
@@ -550,7 +554,7 @@
   <string name="device_g3_can_codename" translatable="false">D852</string>
   <string name="device_g3_can_maintainer" translatable="false">HardStyl3r</string>
 
-  <string name="device_att_g3" translatable="false">LG G3 AT&T</string>
+  <string name="device_att_g3" translatable="false">LG G3 AT&amp;T</string>
   <string name="device_att_g3_codename" translatable="false">D850</string>
   <string name="device_att_g3_maintainer" translatable="false">Hasan Okarci</string>
 
@@ -700,7 +704,7 @@
 
   <string name="device_sagit" translatable="false">Xiaomi MI 6</string>
   <string name="device_sagit_codename" translatable="false">Sagit</string>
-  <string name="device_sagit_maintainer" translatable="false">Ali İhsan Hatun (Asderdd)</string>
+  <string name="device_sagit_maintainer" translatable="false">Arian Keller</string>
 
   <string name="device_scorpio" translatable="false">Xiaomi MI Note 2</string>
   <string name="device_scorpio_codename" translatable="false">Scorpio</string>
