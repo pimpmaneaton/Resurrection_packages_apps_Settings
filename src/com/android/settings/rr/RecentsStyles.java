@@ -98,7 +98,6 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
         hexColor = String.format("#%08x", (0xff21272b & intColor));
         mfabColor.setNewPreviewColor(intColor);
 
-
         mClearStyle = (ListPreference) prefSet.findPreference(RECENTS_STYLE);
         mClearStyle.setValue(String.valueOf(Settings.System.getInt(
                 getContentResolver(), Settings.System.CLEAR_RECENTS_STYLE, 0)));

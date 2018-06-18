@@ -24,6 +24,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -39,6 +40,7 @@ import com.android.internal.util.rr.AwesomeAnimationHelper;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.rr.Preferences.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,6 +52,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 public class AnimationControls extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener {
 
+    private static final String ANIMATION_DURATION = "animation_controls_duration";
     private static final String ACTIVITY_OPEN = "activity_open";
     private static final String ACTIVITY_CLOSE = "activity_close";
     private static final String TASK_OPEN = "task_open";
@@ -60,8 +63,9 @@ public class AnimationControls extends SettingsPreferenceFragment
     private static final String WALLPAPER_CLOSE = "wallpaper_close";
     private static final String WALLPAPER_INTRA_OPEN = "wallpaper_intra_open";
     private static final String WALLPAPER_INTRA_CLOSE = "wallpaper_intra_close";
-        private static final String TASK_OPEN_BEHIND = "task_open_behind";
+    private static final String TASK_OPEN_BEHIND = "task_open_behind";
 
+    private CustomSeekBarPreference mAnimDuration;
     ListPreference mActivityOpenPref;
     ListPreference mActivityClosePref;
     ListPreference mTaskOpenPref;
@@ -72,8 +76,7 @@ public class AnimationControls extends SettingsPreferenceFragment
     ListPreference mWallpaperClose;
     ListPreference mWallpaperIntraOpen;
     ListPreference mWallpaperIntraClose;
-        ListPreference mTaskOpenBehind;
-
+    ListPreference mTaskOpenBehind;
 
     private int[] mAnimations;
     private String[] mAnimationsStrings;
@@ -90,6 +93,19 @@ public class AnimationControls extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.system_animation_controls);
 
         PreferenceScreen prefs = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mAnimDuration = (CustomSeekBarPreference) findPreference(ANIMATION_DURATION);
+        int animdef = Settings.System.getIntForUser(resolver,
+                Settings.System.ANIMATION_CONTROLS_DURATION, 0, UserHandle.USER_CURRENT);
+        mAnimDuration.setValue(animdef);
+        if (animdef == 0) {
+            mAnimDuration.setSummary(getResources().getString(R.string.animation_duration_default));
+        } else {
+            mAnimDuration.setSummary(getResources().getString(R.string.animation_duration_custom));
+        }
+        mAnimDuration.setOnPreferenceChangeListener(this);
+
         mAnimations = AwesomeAnimationHelper.getAnimationsList();
         int animqty = mAnimations.length;
         mAnimationsStrings = new String[animqty];
@@ -98,7 +114,6 @@ public class AnimationControls extends SettingsPreferenceFragment
                 mAnimationsStrings[i] = AwesomeAnimationHelper.getProperName(getActivity().getApplicationContext(), mAnimations[i]);
             mAnimationsNum[i] = String.valueOf(mAnimations[i]);
         }
-
 
         mActivityOpenPref = (ListPreference) findPreference(ACTIVITY_OPEN);
         mActivityOpenPref.setOnPreferenceChangeListener(this);
@@ -159,20 +174,30 @@ public class AnimationControls extends SettingsPreferenceFragment
         mWallpaperIntraClose.setSummary(getProperSummary(mWallpaperIntraClose));
         mWallpaperIntraClose.setEntries(mAnimationsStrings);
         mWallpaperIntraClose.setEntryValues(mAnimationsNum);
-            mTaskOpenBehind = (ListPreference) findPreference(TASK_OPEN_BEHIND);
-            mTaskOpenBehind.setOnPreferenceChangeListener(this);
-            mTaskOpenBehind.setSummary(getProperSummary(mTaskOpenBehind));
-            mTaskOpenBehind.setEntries(mAnimationsStrings);
-            mTaskOpenBehind.setEntryValues(mAnimationsNum);
 
-        }
+        mTaskOpenBehind = (ListPreference) findPreference(TASK_OPEN_BEHIND);
+        mTaskOpenBehind.setOnPreferenceChangeListener(this);
+        mTaskOpenBehind.setSummary(getProperSummary(mTaskOpenBehind));
+        mTaskOpenBehind.setEntries(mAnimationsStrings);
+        mTaskOpenBehind.setEntryValues(mAnimationsNum);
 
+    }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         boolean result = false;
-        if (preference == mActivityOpenPref) {
+        if (preference == mAnimDuration) {
+            int value = (Integer) newValue;
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.ANIMATION_CONTROLS_DURATION, value, UserHandle.USER_CURRENT);
+            if (value == 0) {
+                preference.setSummary(getResources().getString(R.string.animation_duration_default));
+            } else {
+                preference.setSummary(getResources().getString(R.string.animation_duration_custom));
+            }
+            return true;
+        } else if (preference == mActivityOpenPref) {
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(resolver,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[0], val);
@@ -212,10 +237,10 @@ public class AnimationControls extends SettingsPreferenceFragment
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(resolver,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[9], val);
-            } else if (preference == mTaskOpenBehind) {
-                int val = Integer.parseInt((String) newValue);
-                result = Settings.System.putInt(resolver,
-                        Settings.System.ACTIVITY_ANIMATION_CONTROLS[10], val);
+        } else if (preference == mTaskOpenBehind) {
+            int val = Integer.parseInt((String) newValue);
+            result = Settings.System.putInt(resolver,
+                    Settings.System.ACTIVITY_ANIMATION_CONTROLS[10], val);
         }
         preference.setSummary(getProperSummary(preference));
         return result;
@@ -243,9 +268,9 @@ public class AnimationControls extends SettingsPreferenceFragment
             mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[8];
         } else if (preference == mWallpaperIntraClose) {
             mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[9];
-            } else if (preference == mTaskOpenBehind) {
-                mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[10];
-            }
+        } else if (preference == mTaskOpenBehind) {
+            mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[10];
+        }
 
         int mNum = Settings.System.getInt(getActivity().getContentResolver(), mString, 0);
         return mAnimationsStrings[mNum];

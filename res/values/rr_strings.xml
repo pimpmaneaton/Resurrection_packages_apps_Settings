@@ -59,31 +59,32 @@
    <string name="battery_percent_none">Don\'t show</string>
    <string name="battery_percent_outside">Show near icon</string>
    <string name="battery_percent_inside">Show inside icon</string>
-    <!-- ListView animation -->
-    <string name="listview_animation_title">ListView animation</string>
-    <string name="listview_off">Default</string>
-    <string name="listview_wave_left">Wave (left)</string>
-    <string name="listview_wave_right">Wave (right)</string>
-    <string name="listview_alpha">Alpha</string>
-    <string name="listview_scale">Scale</string>
-    <string name="listview_stack_top">Stack (top)</string>
-    <string name="listview_stack_bottom">Stack (bottom)</string>
-    <string name="listview_unfold">Unfold</string>
-    <string name="listview_fold">Fold</string>
-    <string name="listview_translate_left">Translate (left)</string>
-    <string name="listview_translate_right">Translate (right)</string>
-    <string name="listview_title">List Animation</string>
-    <string name="listview_summary">Set Listview animation and interpolator </string>
 
-    <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView interpolator</string>
-    <string name="listview_accelerate_interpolator">Accelerate</string>
-    <string name="listview_decelerate_interpolator">Decelerate</string>
-    <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
-    <string name="listview_anticipate_interpolator">Anticipate</string>
-    <string name="listview_overshoot_interpolator">Overshoot</string>
-    <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
-    <string name="listview_bounce_interpolator">Bounce</string>
+   <!-- ListView animation -->
+   <string name="listview_animation_title">ListView animation</string>
+   <string name="listview_off">Default</string>
+   <string name="listview_wave_left">Wave (left)</string>
+   <string name="listview_wave_right">Wave (right)</string>
+   <string name="listview_alpha">Alpha</string>
+   <string name="listview_scale">Scale</string>
+   <string name="listview_stack_top">Stack (top)</string>
+   <string name="listview_stack_bottom">Stack (bottom)</string>
+   <string name="listview_unfold">Unfold</string>
+   <string name="listview_fold">Fold</string>
+   <string name="listview_translate_left">Translate (left)</string>
+   <string name="listview_translate_right">Translate (right)</string>
+   <string name="listview_title">List Animation</string>
+   <string name="listview_summary">Set Listview animation and interpolator </string>
+
+   <!-- ListView interpolator -->
+   <string name="listview_interpolator_title">ListView interpolator</string>
+   <string name="listview_accelerate_interpolator">Accelerate</string>
+   <string name="listview_decelerate_interpolator">Decelerate</string>
+   <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
+   <string name="listview_anticipate_interpolator">Anticipate</string>
+   <string name="listview_overshoot_interpolator">Overshoot</string>
+   <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
+   <string name="listview_bounce_interpolator">Bounce</string>
 
    <!-- Keyboard and IME  -->
    <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
@@ -501,7 +502,7 @@
     <string name="rr_trans_summary">Customize various elements in notification drawer such as transparency and stroke</string>
     <string name="rr_volume_summary">Customize various elements in volume dialog such as transparency and stroke</string>
     <string name="rr_power_summary">Customize the dim and transparency of the power menu interface</string>
-    <string name="rr_recents_ui_summary">Customize the various elements in recents panel such as membar, immersive recents etc.</string>
+    <string name="rr_recents_ui_summary">Customize the various elements in recents panel such as recents layout, immersive recents etc.</string>
     <string name="recents_clear_all_summary">Replace native clear all button with original floating action button and customize its position</string>
     <string name="omniswitch_summary">Replace stock recents with Omni-recents</string>
     <string name="rr_qs_animation_summary">Enable or disable animations when tapping qs tiles and customize them</string>
@@ -1016,7 +1017,6 @@
     <string name="hardware_keys_double_tap_title">Double tap action</string>
     <string name="hardware_keys_disable_title">Disable hardware buttons</string>
 
-
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
@@ -1038,6 +1038,7 @@
     <string name="title_animation_no_override">Prevent app overrides</string>
     <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
     <string name="animation_duration_default">Default</string>
+    <string name="animation_duration_custom">Custom</string>
 
     <!-- Power menu and dialogs opacity -->
     <string name="power">Power Menu Tweaks</string>

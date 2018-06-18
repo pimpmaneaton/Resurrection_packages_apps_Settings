@@ -113,7 +113,7 @@ public class ToastAnimations extends SettingsPreferenceFragment implements
             }  else if (preference == mIconColor) {
                 String hex = ColorPickerPreference.convertToARGB(Integer
                        .valueOf(String.valueOf(newValue)));
-               int intHex = ColorPickerPreference.convertToColorInt(hex);
+                int intHex = ColorPickerPreference.convertToColorInt(hex);
                 Settings.System.putInt(resolver,
                        Settings.System.TOAST_ICON_COLOR, intHex);
                 Toast.makeText(getActivity(), mToastAnimation.getEntry(),
