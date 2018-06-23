@@ -2178,4 +2178,10 @@
     <string name="twilight_mode_location_dialog">Location disabled</string>
     <string name="twilight_mode_location_disabled">Location access is disabled</string>
     <string name="twilight_mode_location_enable">Enable</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
+    <string name="media_scanner_on_boot_enabled">Scan media</string>
+    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
 </resources>

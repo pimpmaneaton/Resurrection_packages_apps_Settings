@@ -58,7 +58,16 @@
             android:summary="@string/chooser_activity_blacklist_summary"
             android:persistent="false" />
 
-        <PreferenceCategory
+        <com.android.settings.rr.Preferences.SystemSettingIntListPreference
+          android:key="media_scanner_on_boot"
+          android:icon="@drawable/ic_movie"
+          android:title="@string/media_scanner_on_boot_title"
+          android:entries="@array/media_scanner_on_boot_entries"
+          android:entryValues="@array/media_scanner_on_boot_values"
+          android:defaultValue="0" />
+
+
+       <PreferenceCategory
             android:key="blocker_options"
             android:title="@string/blocker_category" >
 
