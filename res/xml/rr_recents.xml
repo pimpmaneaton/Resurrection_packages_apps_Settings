@@ -59,8 +59,6 @@
             android:defaultValue="false"
             android:fragment="com.android.settings.rr.fragments.SlimRecents" />
 
-    </PreferenceCategory>
-
         <com.android.settings.rr.Preferences.SystemSettingMasterSwitchPreference
             android:key="recents_omni_switch"
             android:title="@string/omni_switch_title"
@@ -70,5 +68,7 @@
                 android:targetPackage="org.omnirom.omniswitch"
                 android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
         </com.android.settings.rr.Preferences.SystemSettingMasterSwitchPreference>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
