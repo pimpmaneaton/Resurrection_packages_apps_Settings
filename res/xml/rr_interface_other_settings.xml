@@ -29,40 +29,45 @@
          android:defaultValue="0xfff4511e" /> <!-- deep orange 600 -->
 
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-            android:key="rr_ota_fab"
-            android:title="@string/rr_ota_fab_title"
-            android:summary="@string/rr_ota_fab_summary"
-            android:icon="@drawable/rr_fab_enable"
-            android:defaultValue="true" />
+         android:key="rr_ota_fab"
+         android:title="@string/rr_ota_fab_title"
+         android:summary="@string/rr_ota_fab_summary"
+         android:icon="@drawable/rr_fab_enable"
+         android:defaultValue="true" />
 
     <com.android.settings.rr.Preferences.GlobalSettingSwitchPreference
-            android:key="wake_when_plugged_or_unplugged"
-            android:title="@string/wake_plugged_title"
-            android:summary="@string/wake_plugged_summary"
-            android:icon="@drawable/rr_wake_icon"
-            android:defaultValue="true" />
+         android:key="wake_when_plugged_or_unplugged"
+         android:title="@string/wake_plugged_title"
+         android:summary="@string/wake_plugged_summary"
+         android:icon="@drawable/rr_wake_icon"
+         android:defaultValue="true" />
 
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-            android:key="three_finger_gesture"
-            android:title="@string/three_finger_gesture"
-            android:summary="@string/three_finger_gesture_summary"
-            android:defaultValue="false" 
-            android:icon="@drawable/rr_three_finger_gesture_icon"/>
+         android:key="three_finger_gesture"
+         android:title="@string/three_finger_gesture"
+         android:summary="@string/three_finger_gesture_summary"
+         android:defaultValue="false" 
+         android:icon="@drawable/rr_three_finger_gesture_icon"/>
 
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-            android:key="sensor_block"
-            android:title="@string/sensor_block_title"
-            android:summary="@string/sensor_block_summary"
-            android:icon="@drawable/rr_sensor_icon"
-            android:defaultValue="false" />
+         android:key="sensor_block"
+         android:title="@string/sensor_block_title"
+         android:summary="@string/sensor_block_summary"
+         android:icon="@drawable/rr_sensor_icon"
+         android:defaultValue="false" />
 
     <PreferenceScreen
-            android:id="@+id/ime_settings"
-            android:key="ime_settings"
-            android:title="@string/keyboard_ime_title"
-            android:icon="@drawable/rr_ime_settings"
-            android:summary="@string/keyboard_ime_summury"
-            android:fragment="com.android.settings.rr.fragments.IMESettings" />
+         android:id="@+id/ime_settings"
+         android:key="ime_settings"
+         android:title="@string/keyboard_ime_title"
+         android:icon="@drawable/rr_ime_settings"
+         android:summary="@string/keyboard_ime_summury"
+         android:fragment="com.android.settings.rr.fragments.IMESettings" />
 
+    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+         android:key="splitscreen_force_systembar_enabled"
+         android:title="@string/splitscreen_force_systembar_enabled_title"
+         android:summary="@string/splitscreen_force_systembar_enabled_summary"
+         android:defaultValue="true" />
 
 </PreferenceScreen>

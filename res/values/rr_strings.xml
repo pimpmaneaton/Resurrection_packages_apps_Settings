@@ -2201,4 +2201,7 @@
 
     <!-- OmniSwitch -->
     <string name="omni_switch_title">OmniSwitch</string>
+
+    <string name="splitscreen_force_systembar_enabled_title">Force show system bars in splitscreen</string>
+    <string name="splitscreen_force_systembar_enabled_summary"></string>
 </resources>
