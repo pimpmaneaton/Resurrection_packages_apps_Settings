@@ -37,17 +37,6 @@
          android:summary="@string/lockscreen_weather_summary"
          android:icon="@drawable/rr_ls_weather_icon" />
 
-    <Preference
-        android:key="bottom_shortcuts_category"
-            android:title="@string/rr_lockscreen_target_title"
-            android:icon="@drawable/rr_bottom_shortcuts_icon"
-            android:summary="@string/lockscreen_targets_summary">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
-    </Preference>
-
-
         <PreferenceScreen
                  android:key="lockscreen_shortcuts"
                  android:fragment="com.android.settings.rr.dslv.ActionListViewSettings"
@@ -60,6 +49,16 @@
              <extra android:name="useAppPickerOnly" android:value="true" />
              <extra android:name="fragment" android:value="com.android.settings.rr.fragments.LockscreenShortcutFragment" />
         </PreferenceScreen>
+
+    <Preference
+        android:key="bottom_shortcuts_category"
+            android:title="@string/rr_lockscreen_target_title"
+            android:icon="@drawable/rr_bottom_shortcuts_icon"
+            android:summary="@string/lockscreen_targets_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
+    </Preference>
 
 </PreferenceScreen>
 
