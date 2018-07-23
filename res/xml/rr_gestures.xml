@@ -26,14 +26,23 @@
             android:summary="@string/edge_gestures_summary"
             android:icon="@drawable/ic_edge_gestures"/>
 
+        <!-- Carbon Gestures -->
+        <PreferenceScreen
+            android:key="carbon_gestures"
+            android:fragment="com.android.settings.rr.gesture.CarbonGesturesSettings"
+            android:title="@string/carbon_gesture_preference_title"
+            android:summary="@string/carbon_gestures_summary"
+            android:icon="@drawable/rr_three_finger_gesture_icon"
+            android:persistent="false" />
+
         <!-- Gesture anywhere -->
         <PreferenceScreen
-	    	android:id="@+id/gesture_anywhere"	
+            android:id="@+id/gesture_anywhere"	
             android:key="gesture_anywhere"
             android:fragment="com.android.settings.rr.gesture.GestureAnywhereSettings"
             android:title="@string/gesture_anywhere_title"
             android:summary="@string/gesture_anywhere_summary"
-			android:icon="@drawable/rr_gesture_anywhere_icon" />
+            android:icon="@drawable/rr_gesture_anywhere_icon" />
 
         <!-- App Circle Bar -->
         <PreferenceScreen
