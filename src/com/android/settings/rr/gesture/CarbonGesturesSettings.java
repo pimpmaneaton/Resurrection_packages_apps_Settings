@@ -184,16 +184,16 @@ public class CarbonGesturesSettings extends SettingsPreferenceFragment
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-        if (preference.equals(mCarbonGestureFingers)) {
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.CARBON_CUSTOM_GESTURE_FINGERS, (Integer) objValue, UserHandle.USER_CURRENT);
+        ContentResolver resolver = getActivity().getContentResolver(); 
+        final String key = preference.getKey();
+        if (preference == mCarbonGestureFingers) {
+            int fingers = ((Integer)objValue).intValue();
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.CARBON_CUSTOM_GESTURE_FINGERS, fingers, UserHandle.USER_CURRENT);
             return true;
-        }
-
-        if (preference.equals(mCarbonGestureRight)) {
+        } else if (preference == mCarbonGestureRight) {
             int carbonGestureRight = Integer.parseInt(((String) objValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
+            Settings.System.putIntForUser(resolver,
                     Settings.System.CARBON_CUSTOM_GESTURE_RIGHT, carbonGestureRight, UserHandle.USER_CURRENT);
             int index = mCarbonGestureRight.findIndexOfValue((String) objValue);
             if (carbonGestureRight == 1001) {
@@ -203,11 +203,9 @@ public class CarbonGesturesSettings extends SettingsPreferenceFragment
                         mCarbonGestureRight.getEntries()[index]);
             }
             return true;
-        }
-
-        if (preference.equals(mCarbonGestureLeft)) {
+        } else if (preference == mCarbonGestureLeft) {
             int carbonGestureLeft = Integer.parseInt(((String) objValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
+            Settings.System.putIntForUser(resolver,
                     Settings.System.CARBON_CUSTOM_GESTURE_LEFT, carbonGestureLeft, UserHandle.USER_CURRENT);
             int index = mCarbonGestureLeft.findIndexOfValue((String) objValue);
             if (carbonGestureLeft == 1001) {
@@ -217,11 +215,9 @@ public class CarbonGesturesSettings extends SettingsPreferenceFragment
                         mCarbonGestureLeft.getEntries()[index]);
             }
             return true;
-        }
-
-        if (preference.equals(mCarbonGestureUp)) {
+        } else if (preference == mCarbonGestureUp) {
             int carbonGestureUp = Integer.parseInt(((String) objValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
+            Settings.System.putIntForUser(resolver,
                     Settings.System.CARBON_CUSTOM_GESTURE_UP, carbonGestureUp, UserHandle.USER_CURRENT);
             int index = mCarbonGestureUp.findIndexOfValue((String) objValue);
             if (carbonGestureUp == 1001) {
