@@ -60,7 +60,7 @@ public class CarbonGesturesSettings extends SettingsPreferenceFragment
 
         mCarbonGestureFingers = (CustomSeekBarPreference) findPreference("carbon_gestures_fingers");
         mCarbonGestureFingers.setOnPreferenceChangeListener(this);
-        int carbonGestureFingers = Settings.System.getIntForUser(resolver,
+        int carbonGestureFingers = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.CARBON_CUSTOM_GESTURE_FINGERS,
                 2, UserHandle.USER_CURRENT);
         mCarbonGestureFingers.setValue(carbonGestureFingers);
@@ -187,9 +187,8 @@ public class CarbonGesturesSettings extends SettingsPreferenceFragment
         ContentResolver resolver = getActivity().getContentResolver(); 
         final String key = preference.getKey();
         if (preference == mCarbonGestureFingers) {
-            int fingers = ((Integer)objValue).intValue();
             Settings.System.putIntForUser(resolver,
-                    Settings.System.CARBON_CUSTOM_GESTURE_FINGERS, fingers, UserHandle.USER_CURRENT);
+                    Settings.System.CARBON_CUSTOM_GESTURE_FINGERS, (Integer) objValue, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mCarbonGestureRight) {
             int carbonGestureRight = Integer.parseInt(((String) objValue).toString());
