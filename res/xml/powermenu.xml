@@ -29,6 +29,11 @@
         android:defaultValue="false" />
 
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+        android:key="powermenu_silent"
+        android:title="@string/powermenu_silent_title"
+        android:defaultValue="false" />
+
+    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
         android:key="powermenu_screenshot"
         android:title="@string/powermenu_screenshot_title"
         android:defaultValue="false" />
