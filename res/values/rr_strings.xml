@@ -2132,7 +2132,7 @@
     <!--Custom Lockscreen clock and date options-->
     <string name="lockscreen_clock_selection_title">Clock style</string>
     <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_digital_bold">Bold (digital)</string>
     <string name="lockscreen_clock_selection_analog">Deep night (analog)</string>
     <string name="lockscreen_clock_selection_analog_numbers">Bright white (analog)</string>
     <string name="lockscreen_clock_selection_analog_deadpool">Deadpool (analog)</string>
@@ -2141,8 +2141,8 @@
     <string name="lockscreen_clock_selection_analog_sneeky">Sneeky (analog)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
-    <string name="lockscreen_clock_selection_small">Digital (small)</string>
-    <string name="lockscreen_clock_selection_analog_spidey">Analog (spidey)</string>
+    <string name="lockscreen_clock_selection_small">Small (digital)</string>
+    <string name="lockscreen_clock_selection_analog_spidey">Spidey (analog)</string>
     <string name="lockscreen_date_selection_title">Date style</string>
     <string name="lockscreen_date_selection_default_aosp">Default </string>
     <string name="lockscreen_date_selection_default">Default (larger text)</string>
