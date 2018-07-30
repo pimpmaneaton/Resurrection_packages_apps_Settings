@@ -1724,6 +1724,9 @@
         <item>@string/lockscreen_clock_selection_analog_numbers</item>
         <item>@string/lockscreen_clock_selection_analog_deadpool</item>
         <item>@string/lockscreen_clock_selection_analog_spidey</item>
+        <item>@string/lockscreen_clock_selection_analog_dot</item>
+        <item>@string/lockscreen_clock_selection_analog_spectrum</item>
+        <item>@string/lockscreen_clock_selection_analog_sneeky</item>
         <item>@string/lockscreen_clock_selection_sammy</item>
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
     </string-array>
@@ -1736,6 +1739,9 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
         <item>7</item>
         <item>8</item>
     </string-array>

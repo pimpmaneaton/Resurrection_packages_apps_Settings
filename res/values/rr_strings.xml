@@ -2133,9 +2133,12 @@
     <string name="lockscreen_clock_selection_title">Clock style</string>
     <string name="lockscreen_clock_selection_digital">Default</string>
     <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-    <string name="lockscreen_clock_selection_analog">Analog (deep night)</string>
-    <string name="lockscreen_clock_selection_analog_numbers">Analog (numbers)</string>
-    <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+    <string name="lockscreen_clock_selection_analog">Deep night (analog)</string>
+    <string name="lockscreen_clock_selection_analog_numbers">Numbers (analog)</string>
+    <string name="lockscreen_clock_selection_analog_deadpool">Deadpool (analog)</string>
+    <string name="lockscreen_clock_selection_analog_dot">DotOS (analog)</string>
+    <string name="lockscreen_clock_selection_analog_spectrum">Spectrum (analog)</string>
+    <string name="lockscreen_clock_selection_analog_sneeky">Sneeky (analog)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <string name="lockscreen_clock_selection_small">Digital (small)</string>
