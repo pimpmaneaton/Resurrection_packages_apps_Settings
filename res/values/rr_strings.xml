@@ -2152,6 +2152,12 @@
     <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
     <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
     <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
+    <string name="lockscreen_date_selection_outline_box">White outline</string> 
+    <string name="lockscreen_date_selection_outline_round">White outline (Round)</string>
+    <string name="lockscreen_date_selection_outline_box_black">Black outline</string> 
+    <string name="lockscreen_date_selection_outline_round_black">Black outline (Round)</string>
+    <string name="lockscreen_date_selection_outline_box_accent">Accent based outline</string> 
+    <string name="lockscreen_date_selection_outline_round_accent">Accent based (Round)</string>
 
     <!-- Wallpaper tint -->
     <string name="wallpaper_tint_power_menu">Power menu background tint</string>
