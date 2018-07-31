@@ -21,25 +21,34 @@
     android:title="@string/incall_vibration_category">
 
         <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-                android:key="vibrate_on_connect"
-                android:title="@string/incall_vibrate_connect_title"
-                android:defaultValue="false" />
+            android:key="vibrate_on_connect"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="false" />
 
         <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-                android:key="vibrate_on_callwaiting"
-                android:title="@string/incall_vibrate_call_wait_title"
-                android:defaultValue="false" />
+            android:key="vibrate_on_callwaiting"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="false" />
 
         <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
-                android:key="vibrate_on_disconnect"
-                android:title="@string/incall_vibrate_disconnect_title"
-                android:defaultValue="false" />
+            android:key="vibrate_on_disconnect"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="false" />
 
        <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
             android:key="incall_notifications_vibrate"
             android:title="@string/incall_notifications_vibrate"
             android:summary="@string/incall_notifications_vibrate_summary"
             android:defaultValue="false" />
+
+        <!-- Flashlight on incoming calls -->
+        <com.android.settings.rr.Preferences.SystemSettingIntListPreference
+            android:key="flashlight_on_call"
+            android:icon="@drawable/ic_power_flashlight"
+            android:title="@string/flashlight_on_call_title"
+            android:entries="@array/flashlight_on_call_entries"
+            android:entryValues="@array/flashlight_on_call_values"
+            android:defaultValue="0" />
 
 
 </PreferenceScreen>
