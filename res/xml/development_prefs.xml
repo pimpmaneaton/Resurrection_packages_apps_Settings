@@ -158,7 +158,7 @@
         <Preference android:key="clear_adb_keys"
                 android:title="@string/clear_adb_keys" />
 
-        <lineageos.preference.LineageSecureSettingEditTextPreference
+        <org.lineageos.internal.preference.HostnamePreference
             android:key="device_hostname"
             android:title="@string/device_hostname"
             android:dialogTitle="@string/device_hostname"
