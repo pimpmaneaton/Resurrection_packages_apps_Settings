@@ -70,6 +70,7 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
     private CustomSeekBarPreference mRecentsRadius;
     private CustomSeekBarPreference mRecentsScale;
     private CustomSeekBarPreference mQuickSettPerc;
+    private CustomSeekBarPreference mVolSettPerc;
     private CustomSeekBarPreference mNotSettPerc;
 
     //Colors
@@ -119,10 +120,6 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
         mRadius.setValue(Settings.System.getInt(resolver, Settings.System.BLUR_RADIUS_PREFERENCE_KEY, 5));
         mRadius.setOnPreferenceChangeListener(this);
 
-        /*mNotiTrans = (SwitchPreference) prefSet.findPreference("translucent_notifications_pref");
-        mNotiTrans.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.TRANSLUCENT_NOTIFICATIONS_PREFERENCE_KEY, 0) == 1));
-
         mQuickSett = (SwitchPreference) findPreference("translucent_quick_settings_pref");
         mQuickSett.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.TRANSLUCENT_QUICK_SETTINGS_PREFERENCE_KEY, 0) == 1));
@@ -130,6 +127,14 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
         mQuickSettPerc = (CustomSeekBarPreference) findPreference("quick_settings_transluency");
         mQuickSettPerc.setValue(Settings.System.getInt(resolver, Settings.System.TRANSLUCENT_QUICK_SETTINGS_PRECENTAGE_PREFERENCE_KEY, 60));
         mQuickSettPerc.setOnPreferenceChangeListener(this);
+
+        mVolSettPerc = (CustomSeekBarPreference) findPreference("blur_volumedialog_percentage");
+        mVolSettPerc.setValue(Settings.System.getInt(resolver, Settings.System.BLUR_VOLUMEDIALOG_PERCENTAGE, 60));
+        mVolSettPerc.setOnPreferenceChangeListener(this);
+
+        /*mNotiTrans = (SwitchPreference) prefSet.findPreference("translucent_notifications_pref");
+        mNotiTrans.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.TRANSLUCENT_NOTIFICATIONS_PREFERENCE_KEY, 0) == 1));
 
         /*mNotSettPerc = (CustomSeekBarPreference) findPreference("notifications_transluency");
         mNotSettPerc.setValue(Settings.System.getInt(resolver, Settings.System.TRANSLUCENT_NOTIFICATIONS_PRECENTAGE_PREFERENCE_KEY, 60));
@@ -191,12 +196,17 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
             Settings.System.putInt(
                 resolver, Settings.System.BLUR_RADIUS_PREFERENCE_KEY, value);
             return true;
-       /* } else if (preference == mQuickSettPerc) {
+        } else if (preference == mVolSettPerc) {
+            int value = ((Integer)newValue).intValue();
+            Settings.System.putInt(
+                resolver, Settings.System.BLUR_VOLUMEDIALOG_PERCENTAGE, value);
+            return true;
+        } else if (preference == mQuickSettPerc) {
             int value = ((Integer)newValue).intValue();
             Settings.System.putInt(
                 resolver, Settings.System.TRANSLUCENT_QUICK_SETTINGS_PRECENTAGE_PREFERENCE_KEY, value);
             return true;
-        } else if (preference == mNotSettPerc) {
+        /*  } else if (preference == mNotSettPerc) {
             int value = ((Integer)newValue).intValue();
             Settings.System.putInt(
                 resolver, Settings.System.TRANSLUCENT_NOTIFICATIONS_PRECENTAGE_PREFERENCE_KEY, value);
@@ -261,14 +271,14 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
             boolean enabled = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_EXPANDED_ENABLED_PREFERENCE_KEY, enabled ? 1:0);
-        } else if (preference == mNotiTrans) {
+        /*} else if (preference == mNotiTrans) {
             boolean enabled = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.TRANSLUCENT_NOTIFICATIONS_PREFERENCE_KEY, enabled ? 1:0);     
-      /*  } else if (preference == mQuickSett) {
+                    Settings.System.TRANSLUCENT_NOTIFICATIONS_PREFERENCE_KEY, enabled ? 1:0); */    
+        } else if (preference == mQuickSett) {
             boolean enabled = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.TRANSLUCENT_QUICK_SETTINGS_PREFERENCE_KEY, enabled ? 1:0); */
+                    Settings.System.TRANSLUCENT_QUICK_SETTINGS_PREFERENCE_KEY, enabled ? 1:0); 
         } else if (preference == mRecentsSett) {
             boolean enabled = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -299,6 +309,7 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
 
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
+            ContentResolver resolver = getActivity().getContentResolver();
             int id = getArguments().getInt("id");
             switch (id) {
                 case DLG_RESET:
@@ -309,12 +320,38 @@ public class BlurPersonalizations extends SettingsPreferenceFragment
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(getActivity().getContentResolver(),
+                            Settings.System.putInt(resolver,
                                 Settings.System.BLUR_LIGHT_COLOR_PREFERENCE_KEY, BLUR_LIGHT_COLOR_PREFERENCE_DEFAULT);
-                            Settings.System.putInt(getActivity().getContentResolver(),
+                            Settings.System.putInt(resolver,
                                 Settings.System.BLUR_DARK_COLOR_PREFERENCE_KEY, BLUR_DARK_COLOR_PREFERENCE_DEFAULT);
-                            Settings.System.putInt(getActivity().getContentResolver(),
+                            Settings.System.putInt(resolver,
                                 Settings.System.BLUR_MIXED_COLOR_PREFERENCE_KEY, BLUR_MIXED_COLOR_PREFERENCE_DEFAULT);
+                            Settings.System.putInt(resolver,
+                                Settings.System.STATUS_BAR_EXPANDED_ENABLED_PREFERENCE_KEY, 0);
+                            Settings.System.putInt(resolver,
+                                Settings.System.BLUR_SCALE_PREFERENCE_KEY, 10);
+                            Settings.System.putInt(resolver,
+                                Settings.System.BLUR_RADIUS_PREFERENCE_KEY, 5);
+/*
+        Settings.System.putIntForUser(resolver,
+                Settings.System.BLUR_NOTIFICATIONS_ENABLED, 0, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.BLUR_NOTIFICATIONS_PERCENTAGE, 70, UserHandle.USER_CURRENT);
+*/
+                           Settings.System.putInt(resolver,
+                                Settings.System.TRANSLUCENT_QUICK_SETTINGS_PREFERENCE_KEY, 0);
+                           Settings.System.putInt(resolver,
+                                Settings.System.TRANSLUCENT_QUICK_SETTINGS_PRECENTAGE_PREFERENCE_KEY, 60);
+                           Settings.System.putInt(resolver,
+                                Settings.System.BLUR_VOLUMEDIALOG_ENABLED, 0);
+                           Settings.System.putInt(resolver,
+                                Settings.System.BLUR_VOLUMEDIALOG_PERCENTAGE, 60);
+                           Settings.System.putInt(resolver,
+                                Settings.System.RECENT_APPS_ENABLED_PREFERENCE_KEY, 0);
+                           Settings.System.putInt(resolver,
+                                Settings.System.RECENT_APPS_SCALE_PREFERENCE_KEY, 6);
+                           Settings.System.putInt(resolver,
+                                Settings.System.RECENT_APPS_RADIUS_PREFERENCE_KEY, 3);
                             getOwner().createCustomView();
                         }
                     })
