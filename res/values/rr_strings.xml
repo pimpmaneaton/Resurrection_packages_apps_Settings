@@ -2144,6 +2144,8 @@
     <string name="lockscreen_clock_selection_analog_sneeky">Sneeky (analog)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy Accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy Accent (Alternate)</string>
     <string name="lockscreen_clock_selection_small">Small (digital)</string>
     <string name="lockscreen_clock_selection_analog_spidey">Spidey (analog)</string>
     <string name="lockscreen_date_selection_title">Date style</string>
