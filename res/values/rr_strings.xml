@@ -42,7 +42,7 @@
     <string name="app_name">Resurrection Remix OS</string>
 
     <!-- Security dialog -->
-    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-07-01</string>
+    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-08-01</string>
     <string name="security_dialog_title">Security updates</string>
     <string name="security_dialog_neutral_button">AOSP Security Bulletins</string>
     <string name="android_security_title">AOSP security patch level</string>
