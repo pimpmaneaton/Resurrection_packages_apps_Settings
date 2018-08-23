@@ -62,6 +62,12 @@
             android:summary="@string/qs_footer_services_summary"
             android:defaultValue="false" />
 
+        <SwitchPreference
+            android:key="qs_tile_tinting_enable"
+            android:title="@string/qs_tile_theme_title"
+            android:summary="@string/qs_tile_theme_summary"
+            android:defaultValue="false" />
+
 	<com.android.settings.rr.Preferences.CustomSeekBarPreference
             android:key="qs_panel_alpha"
             android:title="@string/qs_panel_alpha_title"

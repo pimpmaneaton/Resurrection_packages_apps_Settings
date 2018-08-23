@@ -43,14 +43,16 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.rr.Preferences.CustomSeekBarPreference;
+import com.android.settings.rr.utils.Helpers;
 
 public class QsAdvanced extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
         private static final String TAG = "QsAdvanced";
     private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
+    private static final String QS_TILE_TINTING = "qs_tile_tinting_enable"; 
 
     private CustomSeekBarPreference mQsPanelAlpha;
-
+    private SwitchPreference mEnableQsTileTinting;
 
     @Override
     public int getMetricsCategory() {
@@ -68,6 +70,12 @@ public class QsAdvanced extends SettingsPreferenceFragment implements
                 Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
         mQsPanelAlpha.setValue(qsPanelAlpha);
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
+
+        //QS Tile Theme
+        mEnableQsTileTinting = (SwitchPreference) findPreference(QS_TILE_TINTING);
+        mEnableQsTileTinting.setChecked(Settings.System.getInt(resolver,
+                Settings.System.QS_TILE_TINTING_ENABLE, 0) == 1);
+        mEnableQsTileTinting.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -79,7 +87,12 @@ public class QsAdvanced extends SettingsPreferenceFragment implements
                     Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
                     UserHandle.USER_CURRENT);
             return true;
-       
+        } else if (preference == mEnableQsTileTinting) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_TILE_TINTING_ENABLE, value ? 1 : 0);
+            Helpers.showSystemUIrestartDialog(getActivity());
+            return true;
         }
       return false;
     }
