@@ -2135,7 +2135,9 @@
     <!--Custom Lockscreen clock and date options-->
     <string name="lockscreen_clock_selection_title">Clock style</string>
     <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_accent">Accent (digital)</string>
+    <string name="lockscreen_clock_selection_digital_accent_full">Accent full (digital)</string>
+    <string name="lockscreen_clock_selection_digital_accent_hr">Accent hours (digital)</string>
+    <string name="lockscreen_clock_selection_digital_accent_min">Accent minutes (digital)</string>
     <string name="lockscreen_clock_selection_digital_bold">Bold (digital)</string>
     <string name="lockscreen_clock_selection_analog">Deep night (analog)</string>
     <string name="lockscreen_clock_selection_analog_numbers">Bright white (analog)</string>
