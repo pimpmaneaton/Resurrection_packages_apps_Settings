@@ -2271,4 +2271,8 @@
     <!--OmniGesture-->
     <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
     <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
+
+     <!-- Volume Dialog Expanded -->
+    <string name="volume_dialog_force_expanded_title">Force Expanded Volume Panel</string>
+    <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode</string>
 </resources>
