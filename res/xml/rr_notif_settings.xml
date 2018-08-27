@@ -44,4 +44,15 @@
         android:summary="@string/notification_guts_kill_app_button_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:title="@string/interface_other_title">
+
+        <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+            android:key="wallpaper_notification_shade_wallpaper_tint"
+            android:title="@string/wallpaper_tint_notification_shade"
+            android:summary="@string/wallpaper_tint_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
