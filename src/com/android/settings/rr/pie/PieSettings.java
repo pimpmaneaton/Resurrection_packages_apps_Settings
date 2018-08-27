@@ -27,21 +27,17 @@ import android.view.MenuItem;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.rr.Preferences.SecureSettingSwitchPreference;
 
-import com.android.internal.utils.du.DUActionUtils;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 public class PieSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KEY_PIE_STATE = "pie_state";
     private static final String KEY_PIE_BATTERY = "pie_battery_mode";
     private static final String KEY_PIE_THEME = "pie_theme_mode";
     private static final String KEY_PIE_STATUS = "pie_status_indicator";
     private static final String PA_PIE_GRAVITY = "pa_pie_gravity";
 
-    private SecureSettingSwitchPreference enabledPreference;
     private ListPreference mTheme;
     private ListPreference mBattery;
     private ListPreference mStatus;
@@ -53,11 +49,6 @@ public class PieSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.pie_settings);
 
         setHasOptionsMenu(true);
-
-        enabledPreference = (SecureSettingSwitchPreference) findPreference(KEY_PIE_STATE);
-        /*enabledPreference.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.Secure.EDGE_GESTURES_ENABLED, 0) == 1));*/
-        enabledPreference.setOnPreferenceChangeListener(this);
 
         mTheme = (ListPreference) findPreference(KEY_PIE_THEME);
         if (mTheme != null) {
@@ -100,7 +91,6 @@ public class PieSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         int value = Integer.parseInt((String) newValue);
-
         if (preference == mBattery) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.PIE_BATTERY_MODE, value);
         }
@@ -112,22 +102,7 @@ public class PieSettings extends SettingsPreferenceFragment implements
         } if (preference == mPieGravity) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.PIE_GRAVITY, value);
         }
-        if (preference == enabledPreference) {
-            int enabled = ((boolean) newValue) ? 1 : 0;
-            if (enabled == 1) {
-                Settings.Secure.putInt(getContentResolver(),
-                        Settings.Secure.NAVIGATION_BAR_VISIBLE,
-                        0);
-            } else {
-                if (DUActionUtils.hasNavbarByDefault(getPrefContext())) {
-                    Settings.Secure.putInt(getContentResolver(),
-                            Settings.Secure.NAVIGATION_BAR_VISIBLE,
-                            1);
-                }
-            }
-            return true;
-        }
-        return false;
+        return true;
     }
 
     @Override
