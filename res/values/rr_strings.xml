@@ -2267,4 +2267,8 @@
     <!-- Dialer HeadsUp -->
     <string name="always_headsup_dialer_title">Force heads up for dialer</string>
     <string name="always_headsup_dialer_summary">Show heads up for dialer even if heads up is off to avoid fullscreen dialer on incoming calls</string>
+
+    <!--OmniGesture-->
+    <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
+    <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
 </resources>

@@ -23,6 +23,12 @@
         android:title="@string/navbar_visibility" />
 
      <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+        android:key="use_bottom_gesture_navigation"
+        android:title="@string/use_bottom_gesture_title"
+        android:summary="@string/use_bottom_gesture_summary"
+        android:defaultValue="false" />
+
+     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
          android:key="navbar_dynamic"
          android:title="@string/navbar_dynamic_title"
          android:summary="@string/navbar_dynamic_summary"
