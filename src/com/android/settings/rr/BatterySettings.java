@@ -100,7 +100,7 @@ public class BatterySettings extends SettingsPreferenceFragment implements
                 valueIndex = mBatteryPercentage.findIndexOfValue(String.valueOf(showPercent));
         mBatteryPercentage.setSummary(mBatteryPercentage.getEntries()[valueIndex]);
         mBatteryPercentage.setOnPreferenceChangeListener(this);
-        boolean hideForcePercentage = batteryStyle == 6; /*text or hidden style*/
+        boolean hideForcePercentage = batteryStyle == 8; /*text or hidden style*/
         mBatteryPercentage.setEnabled(!hideForcePercentage);
 
         mBatteryBarColor = (ColorPickerPreference) findPreference(PREF_BATT_BAR_COLOR);
@@ -154,7 +154,7 @@ public class BatterySettings extends SettingsPreferenceFragment implements
                              .findIndexOfValue((String) newValue);
                      mBatteryIconStyle
                              .setSummary(mBatteryIconStyle.getEntries()[valueIndex]);
-                    boolean hideForcePercentage = value == 7;/*text or hidden style*/
+                    boolean hideForcePercentage = value == 8;/*text or hidden style*/
             mBatteryPercentage.setEnabled(!hideForcePercentage);
             return true;
          } else  if (preference == mBatteryPercentage) {
