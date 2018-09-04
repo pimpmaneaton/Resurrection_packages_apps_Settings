@@ -77,6 +77,12 @@
         android:fragment="com.android.settings.display.ColorModePreferenceFragment"
         settings:keywords="@string/keywords_color_mode" />
 
+    <Preference
+	android:key="screen_stabilization"
+	android:title="@string/screen_stabilization_title"
+	android:summary="@string/screen_stabilization_summary"
+	android:fragment="com.android.settings.rr.ScreenStabilization" />
+
     <com.android.settings.display.FontDialogPreference
         android:key="custom_font"
         android:title="@string/font_picker_title"
