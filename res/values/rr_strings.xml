@@ -2285,4 +2285,9 @@
     <string name="stabilization_position_friction_title">Position friction</string>
     <string name="stabilization_velocity_amplitude_title">Velocity amplitude</string>
 
+    <!--Visualizer Customizations -->
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+
 </resources>

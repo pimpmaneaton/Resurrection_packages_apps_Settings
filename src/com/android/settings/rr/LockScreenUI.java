@@ -30,10 +30,14 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 public class LockScreenUI extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "LockScreenSecurity";
+    private static final String LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR =  "lock_screen_visualizer_custom_color";
 
+    private ColorPickerPreference mVisualizerColor;
     private ListPreference mAmbientTicker;
 
     @Override
@@ -57,6 +61,14 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
         mAmbientTicker.setValue(Integer.toString(mode));
         mAmbientTicker.setSummary(mAmbientTicker.getEntry());
         mAmbientTicker.setOnPreferenceChangeListener(this);
+
+        // Visualizer custom color
+        mVisualizerColor = (ColorPickerPreference) findPreference(LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR);
+        int visColor = Settings.System.getInt(resolver,
+                Settings.System.LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR, 0xff1976D2);
+        String visColorHex = String.format("#%08x", (0xff1976D2 & visColor));
+        mVisualizerColor.setNewPreviewColor(visColor);
+        mVisualizerColor.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) 		{
@@ -68,6 +80,13 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
                     mAmbientTicker.getEntries()[index]);
             Settings.System.putIntForUser(resolver, Settings.System.FORCE_AMBIENT_FOR_MEDIA,
                     mode, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mVisualizerColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(resolver,
+                    Settings.System.LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR, intHex);
             return true;
         }
         return false;

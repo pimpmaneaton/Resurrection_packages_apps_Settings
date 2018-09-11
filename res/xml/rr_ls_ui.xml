@@ -21,6 +21,24 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:defaultValue="true" />
+
+    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
+        android:key="lock_screen_visualizer_use_custom_color"
+        android:title="@string/lockscreen_visualizer_enable_custom"
+        android:summary="@string/lockscreen_visualizer_enable_custom_summary"
+        android:dependency="lockscreen_visualizer"
+        android:defaultValue="false" />
+    
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="lock_screen_visualizer_custom_color"
+        android:title="@string/lockscreen_visualizer_custom_color"
+        android:dependency="lock_screen_visualizer_use_custom_color"
+        android:defaultValue="0xffffffff" />
+
     <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
         android:key="lockscreen_media_metadata"
         android:title="@string/lockscreen_media_art_title"
